@@ -1,12 +1,29 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
   </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
+  <body class="page-body">
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img src="https://via.placeholder.com/86x35" alt="Логотип магазина товаров ручной работы «Мишка»">
+      </a>
+      <nav class="main-navigation">
+        <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-navigation__wrapper">
+          <ul class="main-navigation__list site-list">
+            <li class="site-list__item"><a class="site-list__link" href="#">Каталог товаров</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="#">Вязание на заказ</a></li>
+          </ul>
+          <div class="main-navigation__search search">
+            <a class="search__link" href="#">Поиск по сайту</a>
+          </div>
+          <div class="main-navigation__cart cart">
+            <a class="cart__link" href="#">Корзина: пока пуста</a>
+          </div>
+        </div>
+      </nav>
+    </header>
   </body>
 </html>
