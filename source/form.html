@@ -84,14 +84,19 @@
             </li>
           </ul>
         </fieldset>
-        <p class="order-form__item form-text form-text--phone">
-          <label class="order-form__title" for="phone">Тел</label>
-          <input class="form-text__input" type="tel" name="phone" id="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" pattern="[+7]{2} [0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" required>
-        </p>
-        <p class="order_form__item form-text form-text--email">
-          <label class="order-form__title" for="email">E-mail</label>
-          <input class="form-text__input" type="email" name="email" id="email" placeholder="Ваш Email*" required>
-        </p>
+        <fieldset>
+          <legend class="visually-hidden">Контактные данные</legend>
+          <ul class="order-form__list">
+            <li class="order-form__item form-text form-text--phone">
+              <label class="order-form__title" for="phone">Тел</label>
+              <input class="form-text__input" type="tel" name="phone" id="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" pattern="[+7]{2} [0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" required>
+            </li>
+            <li class="order-form__item form-text form-text--email">
+              <label class="order-form__title" for="email">E-mail</label>
+              <input class="form-text__input" type="email" name="email" id="email" placeholder="Ваш Email*" required>
+            </li>
+          </ul>
+        </fieldset>
         <p class="order_form__item form-message">
           <label class="form-message__title" for="message">Доп</label>
           <textarea class="form-message__textarea" name="message" id="message" placeholder="Опишите все ваши пожелания к заказу"></textarea>
