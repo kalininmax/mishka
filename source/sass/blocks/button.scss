@@ -1,0 +1,18 @@
+.button {
+  display: block;
+  padding: 16px 0;
+  border: 2px solid $basic-dark;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &--to-cart {
+    padding: 18px 0;
+    border: 0;
+    color: $basic-white;
+    background-color: $basic-aquamarine;
+  }
+}
