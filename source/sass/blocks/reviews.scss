@@ -1,0 +1,31 @@
+.reviews {
+  padding: 0 30px;
+  padding-bottom: 50px;
+}
+
+.reviews__wrapper {
+  margin: 0 auto;
+}
+
+.reviews__title {
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.reviews__quote {
+  margin: 0;
+}
+
+.reviews__text {
+  margin-bottom: 30px;
+}
+
+.reviews__author {
+  margin-bottom: 30px;
+  font-style: normal;
+}
+
+.reviews__author-name {
+  font-weight: bold;
+  color: $basic-black;
+}
