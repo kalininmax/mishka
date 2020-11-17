@@ -1,0 +1,49 @@
+.hit {
+  padding-bottom: 40px;
+}
+
+.hit__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.hit__title {
+  margin-bottom: 20px;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.hit__text {
+  font-size: 17px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $basic-aquamarine;
+}
+
+.hit__info {
+  color: $basic-dark;
+}
+
+.hit__description {
+  margin-bottom: 30px;
+  font-size: 15px;
+}
+
+.hit__specs {
+  margin-bottom: 30px;
+}
+
+.hit__image {
+  margin-bottom: 25px;
+}
+
+.hit__price {
+  font-weight: bold;
+}
+
+.hit__buy {
+  margin-top: 25px;
+}
