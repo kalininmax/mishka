@@ -1,0 +1,21 @@
+.categories {
+  font-size: 19px;
+  font-weight: bold;
+  color: $basic-white;
+  background-color: $basic-aquamarine;
+}
+
+.categories__list {
+  padding: 0;
+  list-style: none;
+}
+
+.categories__item {
+  padding: 0 30px;
+  padding-top: 25px;
+  padding-bottom: 30px;
+
+  &--current {
+    background-color: $special-dark-aquamarine;
+  }
+}
