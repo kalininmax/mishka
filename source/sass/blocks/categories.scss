@@ -2,7 +2,6 @@
   font-size: 19px;
   font-weight: 700;
   color: $basic-white;
-  background-color: $basic-aquamarine;
 }
 
 .categories__list {
@@ -11,11 +10,16 @@
 }
 
 .categories__item {
+  background-color: $basic-aquamarine;
+
+  &:nth-child(even) {
+    background-color: $special-dark-aquamarine;
+  }
+}
+
+.categories__link {
+  display: block;
   padding: 0 30px;
   padding-top: 25px;
   padding-bottom: 30px;
-
-  &--current {
-    background-color: $special-dark-aquamarine;
-  }
 }
