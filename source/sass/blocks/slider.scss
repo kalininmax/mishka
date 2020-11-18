@@ -1,0 +1,27 @@
+.slider {
+  font-size: 15px;
+  line-height: 30px;
+  color: $basic-dark;
+}
+
+.slider-list {
+  padding: 0;
+  margin-bottom: 30px;
+  list-style: none;
+}
+
+.slider__toggles {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.slider__toggle {
+  width: 130px;
+  padding: 13px 0;
+  border: 1px solid $special-grey;
+  background-color: $basic-white;
+
+  &:last-child {
+    border-left: 0;
+  }
+}

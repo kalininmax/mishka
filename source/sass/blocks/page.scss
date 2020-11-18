@@ -1,0 +1,31 @@
+.page {
+  height: 100%;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.page__body {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0;
+  color: $basic-black;
+  background-color: $basic-white;
+}
+
+.page__header {
+  margin: 0 auto;
+  margin-bottom: 75px;
+}
+
+.page__main {
+  margin: 0 auto;
+}
+
+.page__modal {
+  margin: 0 auto;
+}

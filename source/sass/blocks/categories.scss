@@ -1,0 +1,25 @@
+.categories {
+  font-size: 19px;
+  font-weight: 700;
+  color: $basic-white;
+}
+
+.categories__list {
+  padding: 0;
+  list-style: none;
+}
+
+.categories__item {
+  background-color: $basic-aquamarine;
+
+  &:nth-child(even) {
+    background-color: $special-dark-aquamarine;
+  }
+}
+
+.categories__link {
+  display: block;
+  padding: 0 30px;
+  padding-top: 25px;
+  padding-bottom: 30px;
+}

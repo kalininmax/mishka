@@ -1,0 +1,30 @@
+.contacts {
+  padding-bottom: 40px;
+  font-size: 14px;
+  line-height: 30px;
+  color: $basic-dark;
+}
+
+.contacts__wrapper {
+  padding: 0 30px;
+}
+
+.contacts__title {
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 30px;
+  color: $basic-black;
+}
+
+.contacts__list {
+  margin-bottom: 60px;
+}
+
+.contacts__property {
+  text-transform: lowercase;
+}
+
+.contacts__map {
+  width: 100%;
+  margin-bottom: 40px;
+}
