@@ -1,0 +1,39 @@
+.form-checkbox {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.form-checkbox__label {
+  margin-left: 20px;
+  font-weight: 700;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 38px;
+    height: 38px;
+    border: 2px solid $basic-dark;
+  }
+
+  .form-checkbox__input:checked + &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 42px;
+    height: 42px;
+    background-color: $special-aquamarine;
+    transform: scale(0.44);
+  }
+}
+
+.form-checkbox__input {
+  flex-shrink: 0;
+  width: 42px;
+  height: 42px;
+  margin: 0;
+  opacity: 1;
+}
