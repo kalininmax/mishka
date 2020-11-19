@@ -1,0 +1,12 @@
+.form-message {
+  margin: 0;
+}
+
+.form-message__textarea {
+  width: 100%;
+  min-height: 138px;
+  border: 2px solid $basic-black;
+  padding: 17px;
+  font: inherit;
+  box-sizing: border-box;
+}
