@@ -1,0 +1,18 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 185px;
+  padding-top: 30px;
+}
+
+.copyright__text {
+  font-size: 19px;
+}
+
+.copyright__link {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: $basic-aquamarine;
+}
