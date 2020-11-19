@@ -1,0 +1,56 @@
+.order-form {
+  padding: 17px 30px;
+}
+
+.order-form__info {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 13px;
+}
+
+.order-form__feildset {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 35px;
+  border: 0;
+}
+
+.order-form__title {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  color: $basic-aquamarine;
+
+  &::after {
+    content: "";
+    width: 200px;
+    margin-left: auto;
+    height: 1px;
+    background-color: $special-aquamarine;
+  }
+}
+
+.order-form__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.order-form__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.order-form__footnote {
+  margin-top: 17px;
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 16px;
+  color: $basic-dark;
+}
+
+.order-form__submit {
+  width: 100%;
+  font-size: 17px;
+}
