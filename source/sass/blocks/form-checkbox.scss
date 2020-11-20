@@ -5,7 +5,7 @@
 }
 
 .form-checkbox__label {
-  margin-left: 20px;
+  padding-left: 20px;
   font-weight: 700;
 
   &::before {
@@ -21,12 +21,11 @@
   .form-checkbox__input:checked + &::after {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 42px;
-    height: 42px;
+    top: 12px;
+    left: 12px;
+    width: 18px;
+    height: 18px;
     background-color: $special-aquamarine;
-    transform: scale(0.44);
   }
 }
 
@@ -35,5 +34,5 @@
   width: 42px;
   height: 42px;
   margin: 0;
-  opacity: 1;
+  opacity: 0;
 }
