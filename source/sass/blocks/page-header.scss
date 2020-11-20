@@ -1,3 +1,9 @@
 .page-header {
-  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 22px;
+}
+
+.page-header__logo {
+  margin: 0 auto;
 }

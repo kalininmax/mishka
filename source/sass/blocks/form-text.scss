@@ -1,0 +1,21 @@
+.form-text {
+  display: flex;
+  flex-direction: column;
+
+  label {
+    margin-bottom: 0;
+  }
+}
+
+.form-text__label {
+  font-weight: 700;
+}
+
+.form-text__input {
+  padding: 17px;
+  padding-left: 0;
+  border: 0;
+  border-bottom: 2px solid $basic-black;
+  font-family: inherit;
+  font-size: 19px;
+}

@@ -1,10 +1,20 @@
 .page-footer {
-  padding: 25px 0;
+  padding: 25px 30px;
   background-color: $basic-grey;
 }
 
+.page-footer__logo {
+  display: none;
+}
+
 .page-footer__socials {
-  margin: 0;
+  padding: 0;
+  margin: 0 auto;
   margin-bottom: 50px;
   list-style: none;
+}
+
+.page-footer__copyright {
+  margin: 0 auto;
+  box-shadow: inset 0 1px 0 $special-grey;
 }

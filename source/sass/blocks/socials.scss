@@ -1,0 +1,12 @@
+.socials {
+  display: flex;
+  justify-content: space-between;
+  width: 140px;
+}
+
+.socials__link {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: $basic-aquamarine;
+}
