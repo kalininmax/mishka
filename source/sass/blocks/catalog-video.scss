@@ -1,0 +1,47 @@
+.catalog-video {
+  padding-top: 22px;
+  padding-bottom: 33px;
+  border: 1px solid $special-grey;
+}
+
+.catalog-video__title {
+  padding-left: 90px;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.catalog-video__wrapper {
+  position: relative;
+  margin-bottom: 35px;
+}
+
+.catalog-video__player {
+  display: block;
+  margin: 0 auto;
+}
+
+.catalog-video__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -32px;
+  margin-left: -45px;
+  width: 90px;
+  height: 65px;
+  border: 5px solid $basic-white;
+  border-radius: 20px;
+  background-color: $basic-aquamarine;
+  z-index: 10;
+}
+
+.catalog-video__description {
+  padding-left: 30px;
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 13px;
+}
+
+.catalog-video__buy {
+  width: calc(100% - 68px);
+  margin: 0 auto;
+}
