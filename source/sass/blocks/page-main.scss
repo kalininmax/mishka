@@ -1,10 +1,7 @@
-.page-main {
-  background: url("https://via.placeholder.com/575x373") no-repeat 50% 0;
-}
-
 .page-main__title {
   padding: 73px 30px;
   margin: 0;
+  margin-bottom: 30px;
   font-size: 27px;
   line-height: 30px;
   text-align: center;
@@ -30,4 +27,8 @@
 
 .page-main__contacts {
   margin-bottom: 40px;
+}
+
+.page-main__video {
+  margin-bottom: 60px;
 }
