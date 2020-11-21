@@ -1,8 +1,13 @@
 .to-cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 30px;
 }
 
 .to-cart__title {
+  padding: 0 55px;
+  margin: 0;
   margin-bottom: 14px;
   font-size: 25px;
   line-height: 30px;
