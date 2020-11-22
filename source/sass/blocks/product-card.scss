@@ -1,6 +1,7 @@
 .product-card {
   display: flex;
   flex-direction: column;
+  align-items: center;
   border: 1px solid $special-grey;
 }
 
@@ -11,14 +12,19 @@
 
 .product-card__title {
   order: 2;
-  padding-left: 30px;
-  margin-top: 25px;
+  padding: 0 30px;
+  margin: 0;
   margin-bottom: 6px;
   font-size: 17px;
   line-height: 24px;
 }
 
+.product-card__image {
+  margin-bottom: 25px;
+}
+
 .product-card__specs {
+  align-self: flex-start;
   padding-left: 30px;
   margin: 0;
   margin-bottom: 18px;
@@ -33,7 +39,6 @@
   padding-top: 20px;
   padding-bottom: 30px;
   border-top: 1px solid $special-grey;
-  margin: 0 auto;
 }
 
 .product-card__price {
