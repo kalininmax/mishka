@@ -1,6 +1,6 @@
 .button {
   display: block;
-  padding: 16px;
+  padding: 16px 11px;
   border: 2px solid $basic-dark;
   font-size: 18px;
   line-height: 20px;
@@ -9,9 +9,11 @@
   text-transform: uppercase;
   background-color: $basic-white;
   cursor: pointer;
+  box-sizing: border-box;
 
   &--to-cart {
-    padding: 18px 70px;
+    padding-top: 18px;
+    padding-bottom: 18px;
     border: 0;
     color: $basic-white;
     background-color: $basic-aquamarine;
