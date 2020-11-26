@@ -1,4 +1,6 @@
 .reviews {
+  display: flex;
+  justify-content: center;
   padding: 0 30px;
   padding-bottom: 50px;
 
@@ -11,7 +13,6 @@
 
 .reviews__wrapper {
   position: relative;
-  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     display: grid;
