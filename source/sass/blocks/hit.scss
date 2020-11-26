@@ -23,11 +23,12 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 292px 525px;
+    grid-template-columns: 292px 334px;
     column-gap: 42px;
   }
 
   @media (min-width: $desktop-width) {
+    grid-template-columns: 292px 525px;
     padding-left: 175px;
   }
 }
@@ -52,6 +53,8 @@
   @media (min-width: $desktop-width) {
     grid-row: 1/2;
     margin-top: 70px;
+    font-size: 53px;
+    line-height: 57px;
     z-index: 2;
   }
 }
