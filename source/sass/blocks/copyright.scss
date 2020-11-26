@@ -4,6 +4,10 @@
   align-items: center;
   width: 185px;
   padding-top: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .copyright__text {
