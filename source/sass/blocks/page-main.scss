@@ -1,15 +1,40 @@
+.page-main--index {
+  background-image: url("../../img/index-bg-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: contain;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/index-bg.jpg");
+  }
+
+  .page-main__title {
+    background: none;
+  }
+}
+
 .page-main__title {
-  padding: 73px 30px;
+  padding: 0 30px;
+  padding-top: 73px;
+  padding-bottom: 135px;
   margin: 0;
-  margin-bottom: 30px;
   font-size: 27px;
   line-height: 30px;
   text-align: center;
   background-color: $basic-grey;
-}
 
-.page-main__categories {
-  margin-bottom: 30px;
+  @media (min-width: $tablet-width) {
+    padding-top: 155px;
+    padding-bottom: 372px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 158px;
+    font-size: 53px;
+    height: 57px;
+  }
 }
 
 .page-main__hit {

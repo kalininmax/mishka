@@ -1,49 +1,130 @@
 .hit {
+  display: flex;
+  justify-content: center;
+  padding: 0 30px;
+  padding-top: 30px;
   padding-bottom: 40px;
+  background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 54px;
+  }
 }
 
 .hit__wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 0 30px;
-  margin: 0 auto;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 292px 525px;
+    column-gap: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 175px;
+  }
 }
 
 .hit__title {
-  margin-bottom: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  margin-bottom: 18px;
   font-size: 25px;
   line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    grid-column: 1/-1;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-row: 1/2;
+    margin-top: 70px;
+    z-index: 2;
+  }
 }
 
 .hit__text {
+  margin-top: 4px;
+  order: 2;
   font-size: 17px;
   line-height: 20px;
   text-transform: uppercase;
   color: $basic-aquamarine;
+
+  @media (min-width: $tablet-width) {
+    width: 100px;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    left: -150px;
+  }
 }
 
 .hit__info {
   color: $basic-dark;
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
+  }
 }
 
 .hit__description {
-  margin-bottom: 30px;
+  margin: 0;
   font-size: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 38px;
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
 
 .hit__specs {
-  margin-bottom: 30px;
+  margin: 0;
 }
 
 .hit__image {
+  grid-row: 2/4;
+  grid-column: 2/3;
   margin-bottom: 25px;
+  width: 100%;
+
+  @media (min-width: $desktop-width) {
+    grid-row: 1/4;
+  }
+}
+
+.hit__order {
+  text-align: center;
 }
 
 .hit__price {
   font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .hit__buy {
+  max-width: 292px;
+  margin: 0 auto;
   margin-top: 25px;
 }

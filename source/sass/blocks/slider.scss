@@ -10,6 +10,10 @@
   list-style: none;
 }
 
+.slider__item:nth-child(2) {
+  display: none;
+}
+
 .slider__toggles {
   display: flex;
   margin-bottom: 40px;

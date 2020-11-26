@@ -8,28 +8,31 @@
   </head>
   <body class="page__body">
     <header class="page__header page-header">
-      <a class="page-header__logo">
-        <img src="https://via.placeholder.com/86x35" alt="Логотип магазина товаров ручной работы «Мишка»">
-      </a>
       <nav class="main-navigation">
+        <a class="page-header__logo">
+          <img src="https://via.placeholder.com/86x35" alt="Логотип магазина товаров ручной работы «Мишка»">
+        </a>
         <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <div class="main-navigation__wrapper">
-          <ul class="main-navigation__list site-list">
-            <li class="site-list__item"><a class="main-navigation__item site-list__link" href="catalog.html">Каталог товаров</a></li>
-            <li class="site-list__item"><a class="main-navigation__item site-list__link" href="form.html">Вязание на заказ</a></li>
-          </ul>
-          <a class="main-navigation__item main-navigation__search" href="#">Поиск по сайту</a>
-          <a class="main-navigation__item main-navigation__cart" href="#">Корзина: пока пуста</a>
-        </div>
+        <ul class="main-navigation__list site-list">
+          <li class="site-list__item"><a class="main-navigation__item main-navigation__item--catalog site-list__link" href="catalog.html">Каталог товаров</a></li>
+          <li class="site-list__item"><a class="main-navigation__item site-list__link" href="form.html">Вязание на заказ</a></li>
+        </ul>
+        <ul class="main-navigation__list main-navigation__list--market site-list">
+          <li class="site-list__item"><a class="main-navigation__item main-navigation__item--new site-list__link" href="#">Новые поступления</a></li>
+          <li class="site-list__item"><a class="main-navigation__item main-navigation__item--sale site-list__link" href="#">Распродажа</a></li>
+        </ul>
+        <a class="main-navigation__item main-navigation__item--search" href="#"><span>Поиск по сайту</span></a>
+        <a class="main-navigation__item main-navigation__item--cart" href="#">Корзина: пока пуста</a>
       </nav>
+      <p class="page-header__info">Бесплатная доставка по России</p>
     </header>
-    <main class="page__main page-main">
-      <h1 class="page-main__title">Милые штуки ручной работы для дома</h1>
+    <main class="page__main page-main page-main--index">
+      <h1 class="page-main__title">Милые штуки ручной<br> работы для дома</h1>
       <section class="page-main__categories categories">
         <h2 class="visually-hidden">Категории товаров</h2>
         <ul class="categories__list">
-          <li class="categories__item"><a href="#" class="categories__link categories__link--interior">Предметы интерьера</a></li>
-          <li class="categories__item categories__item"><a href="#" class="categories__link categories__link--toys">Детские игрушки</a></li>
+          <li class="categories__item"><a href="#" class="categories__link categories__link--interior">Предметы<br> интерьера</a></li>
+          <li class="categories__item categories__item"><a href="#" class="categories__link categories__link--toys">Детские<br> игрушки</a></li>
         </ul>
       </section>
       <section class="page-main__hit hit">
@@ -39,7 +42,7 @@
             Вязаные корзинки
           </h2>
           <div class="hit__info">
-            <p class="hit__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+            <p class="hit__description">Экологически чистая пряжа,<br> ручная работа. Доступны в шести расцветках, и трех размерах.</p>
             <dl class="hit__specs specs">
               <div class="specs__item">
                 <dt class="specs__name">Цвет:</dt>
@@ -66,12 +69,12 @@
         <div class="features__wrapper">
           <h2 class="features__title">Коротко о нас:</h2>
           <ul class="features__list">
-            <li class="features__item features__item--flower">Экологически чистые материалы</li>
-            <li class="features__item features__item--money">Скандинавский стиль по российской цене</li>
-            <li class="features__item features__item--heart">Увеличивает лайки на фотографиях</li>
-            <li class="features__item features__item--ball">Связано вручную с любовью и умилением</li>
+            <li class="features__item features__item--flower">Экологически чистые&nbsp;материалы</li>
+            <li class="features__item features__item--ball">Связано вручную с&nbsp;любовью&nbsp;и&nbsp;умилением</li>
+            <li class="features__item features__item--money">Скандинавский стиль по&nbsp;российской цене</li>
             <li class="features__item features__item--rocket">Поддержка отечественного производителя</li>
-            <li class="features__item features__item--gift">Поставляется в подарочной упаковке</li>
+            <li class="features__item features__item--heart">Увеличивает лайки на&nbsp;фотографиях</li>
+            <li class="features__item features__item--gift">Поставляется в&nbsp;подарочной упаковке</li>
           </ul>
         </div>
       </section>
@@ -118,7 +121,7 @@
             <dt class="contacts__property">E-mail:</dt>
             <dd class="contacts__value"><a href="mailto:info@mimimishkashop.ru" class="contacts__email-link">info@mimimishkashop.ru</a></dd>
             <dt class="contacts__property">Адрес:</dt>
-            <dd class="contacts__value">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</dd>
+            <dd class="contacts__value">г. Санкт-Петербург<br> ул. Большая Конюшенная<br> д. 19/8, офис 101</dd>
           </dl>
         </div>
         <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d595.0839688051276!2d30.32250406808989!3d59.938739415818915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x62740c0ffcd8a91f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsIDEwMSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MTE4Ng!5e0!3m2!1sru!2sru!4v1605223341882!5m2!1sru!2sru" width="527" height="457" style="border: 0;" aria-hidden="false" tabindex="0"></iframe>
