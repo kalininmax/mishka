@@ -1,6 +1,4 @@
 .hit {
-  display: flex;
-  justify-content: center;
   padding: 0 30px;
   padding-top: 30px;
   padding-bottom: 40px;
@@ -20,6 +18,8 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  max-width: 875px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -30,6 +30,7 @@
   @media (min-width: $desktop-width) {
     grid-template-columns: 292px 525px;
     padding-left: 175px;
+    column-gap: 58px;
   }
 }
 

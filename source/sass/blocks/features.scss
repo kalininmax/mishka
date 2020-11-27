@@ -1,15 +1,18 @@
 .features {
-  display: flex;
-  justify-content: center;
   padding: 0 30px;
+  max-width: 875px;
 
   @media (min-width: $tablet-width) {
     padding: 0 50px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 225px;
+  }
 }
 
 .features__title {
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 30px;
   font-size: 25px;
   line-height: 30px;
