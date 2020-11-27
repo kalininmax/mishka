@@ -4,9 +4,9 @@
   color: $basic-dark;
 }
 
-.slider-list {
+.slider__list {
   padding: 0;
-  margin-bottom: 30px;
+  margin: 0;
   list-style: none;
 }
 
@@ -16,7 +16,7 @@
 
 .slider__toggles {
   display: flex;
-  margin-bottom: 40px;
+  margin: 0;
 }
 
 .slider__toggle {
