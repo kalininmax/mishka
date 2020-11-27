@@ -1,11 +1,11 @@
 .page-main--index {
-  background-image: url("../../img/index-bg-mobile.jpg");
+  background-image: url("../img/index-bg-mobile.jpg");
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: contain;
 
   @media (min-width: $tablet-width) {
-    background-image: url("../../img/index-bg.jpg");
+    background-image: url("../img/index-bg.jpg");
   }
 
   .page-main__title {
@@ -14,27 +14,33 @@
 }
 
 .page-main__title {
+  max-width: 1050px;
   padding: 0 30px;
-  padding-top: 73px;
-  padding-bottom: 135px;
-  margin: 0;
+  margin: 0 auto;
+  margin-top: 73px;
+  margin-bottom: 135px;
   font-size: 27px;
   line-height: 30px;
   text-align: center;
   background-color: $basic-grey;
 
   @media (min-width: $tablet-width) {
-    padding-top: 155px;
-    padding-bottom: 372px;
+    margin-top: 155px;
+    margin-bottom: 372px;
     font-size: 43px;
     line-height: 50px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 158px;
+    margin-top: 158px;
+    margin-bottom: 355px;
     font-size: 53px;
     height: 57px;
   }
+}
+
+.page-main__categories {
+  margin: 0 auto;
 }
 
 .page-main__hit {
