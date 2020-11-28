@@ -1,5 +1,4 @@
 .hit {
-  display: flex;
   padding: 0 30px;
   padding-top: 30px;
   padding-bottom: 40px;
@@ -16,15 +15,12 @@
 }
 
 .hit__wrapper {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
   max-width: 875px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 292px 334px;
+    grid-template-columns: 292px 1fr;
     column-gap: 42px;
   }
 
@@ -39,7 +35,8 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  margin: 0;
+  max-width: 292px;
+  margin: 0 auto;
   margin-bottom: 18px;
   font-size: 25px;
   line-height: 30px;
@@ -48,6 +45,9 @@
     flex-direction: row;
     justify-content: space-between;
     grid-column: 1/-1;
+    max-width: 875px;
+    margin: 0;
+    margin-bottom: 35px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -82,8 +82,10 @@
 }
 
 .hit__info {
-  color: $basic-dark;
+  max-width: 410px;
+  margin: 0 auto;
   margin-bottom: 30px;
+  color: $basic-dark;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 24px;
@@ -106,10 +108,17 @@
 }
 
 .hit__image {
+  display: block;
   grid-row: 2/4;
   grid-column: 2/3;
+  margin: 0 auto;
   margin-bottom: 25px;
   width: 100%;
+  max-width: 525px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 
   @media (min-width: $desktop-width) {
     grid-row: 1/4;
@@ -117,6 +126,7 @@
 }
 
 .hit__order {
+  margin-top: auto;
   text-align: center;
 }
 
