@@ -1,16 +1,30 @@
 .categories {
+  max-width: 1050px;
   font-size: 19px;
   font-weight: 700;
   color: $basic-white;
+
+  @media (min-width: 500px) {
+    padding: 0 50px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .categories__list {
   padding: 0;
+  margin: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .categories__item {
   background-color: $basic-aquamarine;
+  flex-grow: 1;
 
   &:nth-child(even) {
     background-color: $special-dark-aquamarine;
@@ -18,8 +32,24 @@
 }
 
 .categories__link {
+  position: relative;
   display: block;
   padding: 0 30px;
   padding-top: 25px;
   padding-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 22px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: $basic-grey;
+  }
 }

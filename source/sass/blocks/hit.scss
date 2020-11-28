@@ -1,49 +1,149 @@
 .hit {
+  padding: 0 30px;
+  padding-top: 30px;
   padding-bottom: 40px;
+  background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 54px;
+  }
 }
 
 .hit__wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0 30px;
+  max-width: 875px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 292px 1fr;
+    column-gap: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 292px 525px;
+    padding-left: 175px;
+    column-gap: 58px;
+  }
 }
 
 .hit__title {
-  margin-bottom: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 292px;
+  margin: 0 auto;
+  margin-bottom: 18px;
   font-size: 25px;
   line-height: 30px;
+
+  @media (min-width: 430px) {
+    flex-direction: row;
+    justify-content: space-between;
+    grid-column: 1/-1;
+    max-width: 410px;
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 875px;
+    margin: 0;
+    margin-bottom: 35px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-row: 1/2;
+    margin-top: 70px;
+    font-size: 53px;
+    line-height: 57px;
+    z-index: 2;
+  }
 }
 
 .hit__text {
+  margin-top: 4px;
+  order: 2;
   font-size: 17px;
   line-height: 20px;
   text-transform: uppercase;
   color: $basic-aquamarine;
+
+  @media (min-width: 430px) {
+    text-align: center;
+    width: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    left: -150px;
+  }
 }
 
 .hit__info {
+  max-width: 410px;
+  margin: 0 auto;
+  margin-bottom: 30px;
   color: $basic-dark;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
+  }
 }
 
 .hit__description {
-  margin-bottom: 30px;
+  margin: 0;
   font-size: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 38px;
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
 
 .hit__specs {
-  margin-bottom: 30px;
+  margin: 0;
 }
 
 .hit__image {
+  display: block;
+  grid-row: 2/4;
+  grid-column: 2/3;
+  margin: 0 auto;
   margin-bottom: 25px;
+  width: 100%;
+  max-width: 525px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-row: 1/4;
+  }
+}
+
+.hit__order {
+  margin-top: auto;
+  text-align: center;
 }
 
 .hit__price {
   font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .hit__buy {
+  max-width: 292px;
+  margin: 0 auto;
   margin-top: 25px;
 }

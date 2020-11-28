@@ -1,9 +1,41 @@
 .page-header {
-  display: flex;
-  flex-direction: column;
-  padding-top: 22px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 50px;
+    padding-right: 50px;
+    border-bottom: 1px solid rgba($basic-black, 0.1);
+  }
+}
+
+.page-header__nav {
+  margin: 0 auto;
 }
 
 .page-header__logo {
+  padding: 22px 30px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    margin: 0;
+    margin-right: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 100px;
+  }
+}
+
+.page-header__info {
+  position: absolute;
+  top: 105px;
+  right: 0;
+  margin: 0;
+  font-size: 15px;
+  font-weight: 400;
+
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
 }
