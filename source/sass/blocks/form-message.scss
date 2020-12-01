@@ -1,5 +1,19 @@
 .form-message {
+  position: relative;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    max-width: 755px;
+    padding-left: 160px;
+  }
+}
+
+.form-message__label {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 18px;
+    left: 0;
+  }
 }
 
 .form-message__textarea {
