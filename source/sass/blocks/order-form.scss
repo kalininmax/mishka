@@ -112,7 +112,7 @@
 }
 
 .order-form__list--color {
-  @media (min-width: 460px) {
+  @media (min-width: 530px) {
     grid-template-columns: 1fr 1fr;
     column-gap: 60px;
   }
