@@ -48,22 +48,27 @@
     &:nth-child(odd) {
       background-color: $basic-grey;
     }
+
+    &:last-child {
+      background-color: $basic-white;
+    }
   }
 }
 
 .order-form__wrapper--bottom {
-  display: grid;
-  max-width: 840px;
-  margin: 0 auto;
-
-  @media (min-width: $tablet-width) {
-    grid-template-columns: 1fr 1fr;
+  @media (min-width: 650px) {
+    display: flex;
+    justify-content: space-between;
     align-items: baseline;
-
-    .order-form__item {
-      grid-column: 1/-1;
-    }
+    max-width: 840px;
+    padding-top: 0;
+    margin: 0 auto;
   }
+}
+
+.order-form__wrapper .form-message {
+  max-width: 680px;
+  margin: 0 auto;
 }
 
 .order-form__title {
@@ -122,12 +127,6 @@
   }
 }
 
-.order-form__item {
-  @media (min-width: $tablet-width) {
-    max-width: 755px;
-  }
-}
-
 .order-form__footnote {
   margin: 0;
   margin-top: 17px;
@@ -135,7 +134,7 @@
   line-height: 16px;
   color: $basic-dark;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: 650px) {
     order: 2;
     justify-self: end;
     margin: 0;
@@ -151,9 +150,9 @@
   margin-top: 30px;
   font-size: 17px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: 650px) {
     margin: 0;
-    margin-top: 50px;
+    margin-top: 30px;
   }
 
   @media (min-width: $desktop-width) {
