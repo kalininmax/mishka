@@ -1,10 +1,19 @@
+.catalog {
+  padding: 30px 0;
+}
+
 .catalog__list {
-  padding: 0;
+  padding: 0 30px;
   margin: 0;
   list-style: none;
 }
 
 .catalog__item {
-  padding: 0 30px;
+  max-width: 334px;
+  margin: 0 auto;
   margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 668px;
+  }
 }
