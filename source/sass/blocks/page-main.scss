@@ -7,35 +7,47 @@
   @media (min-width: $tablet-width) {
     background-image: url("../img/index-bg.jpg");
   }
+}
 
-  .page-main__title {
-    background: none;
-  }
+.page-main__title-wrapper {
+  background-color: $basic-grey;
 }
 
 .page-main__title {
   max-width: 1050px;
-  padding: 0 30px;
+  padding: 74px 30px;
   margin: 0 auto;
-  margin-top: 73px;
-  margin-bottom: 135px;
   font-size: 27px;
   line-height: 30px;
   text-align: center;
-  background-color: $basic-grey;
 
   @media (min-width: $tablet-width) {
-    margin-top: 155px;
-    margin-bottom: 372px;
+    padding-top: 100px;
+    padding-bottom: 75px;
+    margin: 0 auto;
     font-size: 43px;
     line-height: 50px;
   }
 
   @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
+.page-main__title--index {
+  margin-top: 73px;
+  margin-bottom: 135px;
+  background: none;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 155px;
+    margin-bottom: 372px;
+  }
+
+  @media (min-width: $desktop-width) {
     margin-top: 158px;
     margin-bottom: 355px;
-    font-size: 53px;
-    height: 57px;
   }
 }
 

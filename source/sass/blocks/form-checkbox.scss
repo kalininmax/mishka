@@ -7,6 +7,7 @@
 .form-checkbox__label {
   padding-left: 20px;
   font-weight: 700;
+  word-break: break-all;
 
   &::before {
     content: "";
