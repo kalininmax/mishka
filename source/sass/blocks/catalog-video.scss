@@ -17,24 +17,27 @@
 .catalog-video__wrapper {
   display: grid;
   border: 1px solid $special-grey;
+  padding: 0 30px;
   padding-top: 20px;
   padding-bottom: 33px;
 
   @media (min-width: 440px) {
     padding-top: 0;
+    padding-left: 42px;
+    padding-right: 42px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 680px 1fr;
     grid-template-rows: min-content min-content 1fr;
     column-gap: 80px;
+    padding-left: 0;
     padding-bottom: 0;
   }
 }
 
 .catalog-video__title {
-  padding-left: 90px;
-  padding-right: 30px;
+  padding-left: 60px;
   margin: 0;
   margin-bottom: 25px;
   font-size: 17px;
@@ -44,7 +47,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-left: 107px;
+    padding-left: 65px;
   }
 
   @media (min-width: $desktop-width) {
@@ -56,15 +59,18 @@
 
 .catalog-video__player-wrapper {
   position: relative;
+  margin: 0 -30px;
   margin-bottom: 35px;
 
   @media (min-width: 440px) {
     order: -1;
+    margin-left: -42px;
+    margin-right: -42px;
   }
 
   @media (min-width: $desktop-width) {
     grid-row: 1/-1;
-    margin-bottom: 0;
+    margin: 0;
   }
 }
 
@@ -93,7 +99,7 @@
 
 .catalog-video__description {
   max-width: 580px;
-  padding: 0 30px;
+  padding: 0;
   margin: 0;
   margin-bottom: 40px;
   font-size: 13px;
@@ -103,10 +109,6 @@
     line-height: 30px;
   }
 
-  @media (min-width: $tablet-width) {
-    padding: 0 40px;
-  }
-
   @media (min-width: $desktop-width) {
     padding-left: 0;
     margin-bottom: 50px;
@@ -114,9 +116,6 @@
 }
 
 .catalog-video__buy {
-  width: calc(100% - 68px);
-  margin: 0 auto;
-
   @media (min-width: $desktop-width) {
     max-width: 230px;
     margin: 0;
