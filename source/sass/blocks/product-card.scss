@@ -1,41 +1,45 @@
 .product-card {
   display: grid;
+  padding: 0 30px;
   border: 1px solid $special-grey;
 
-  @media (min-width: $tablet-width) {
-    grid-template-columns: 1fr 1fr;
+  @media (min-width: 600px) {
+    grid-template-columns: max-content 1fr;
     grid-template-rows: min-content min-content 1fr;
     column-gap: 30px;
+    padding-left: 0;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr;
     height: 100%;
+    padding-left: 30px;
   }
 }
 
 .product-card__link--title {
-  @media (min-width: $tablet-width) {
+  @media (min-width: 600px) {
     margin-top: 30px;
   }
 }
 
 .product-card__link--image {
   order: -1;
+  margin: 0 -30px;
   margin-bottom: 25px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: 600px) {
     grid-row: 1/-1;
-    margin-bottom: 0;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
     grid-row: auto;
+    margin: 0 -30px;
   }
 }
 
 .product-card__title {
-  padding: 0 30px;
   margin: 0;
   margin-bottom: 6px;
   font-size: 17px;
@@ -44,12 +48,7 @@
   @media (min-width: $tablet-width) {
     width: 100%;
     max-width: 260px;
-    padding: 0;
     font-size: 20px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 0 30px;
   }
 }
 
@@ -57,8 +56,9 @@
   display: block;
   width: 100%;
 
-  @media (min-width: $tablet-width) {
-    min-height: 334px;
+  @media (min-width: 600px) {
+    width: 334px;
+    height: 334px;
   }
 
   @media (min-width: $desktop-width) {
@@ -68,42 +68,32 @@
 
 .product-card__specs {
   align-self: flex-start;
-  padding: 0 30px;
   margin: 0;
   margin-bottom: 18px;
   font-size: 13px;
   line-height: 30px;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
     font-size: 15px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 0 30px;
   }
 }
 
 .product-card__order {
   display: flex;
   justify-content: space-between;
-  width: calc(100% - 60px);
   padding-top: 20px;
   padding-bottom: 30px;
-  margin: 0 auto;
+  margin: 0;
   border-top: 1px solid $special-grey;
   font-size: 15px;
 
-  @media (min-width: $tablet-width) {
-    width: calc(100% - 30px);
+  @media (min-width: 600px) {
     margin: 0;
     margin-top: auto;
-    font-size: 17px;
   }
 
-  @media (min-width: $desktop-width) {
-    width: calc(100% - 60px);
-    margin: 0 auto;
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
   }
 }
 
