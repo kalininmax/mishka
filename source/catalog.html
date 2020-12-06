@@ -8,32 +8,35 @@
   </head>
   <body class="page__body">
     <header class="page__header page-header">
-      <a class="page-header__logo" href="index.html">
-        <img src="https://via.placeholder.com/86x35" alt="Логотип магазина товаров ручной работы «Мишка»">
-      </a>
-      <nav class="main-navigation">
+      <nav class="main-navigation page-header__nav">
+        <a class="page-header__logo" href="index.html">
+          <img src="https://via.placeholder.com/86x35" alt="Логотип магазина товаров ручной работы «Мишка»">
+        </a>
         <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <div class="main-navigation__wrapper">
-          <ul class="main-navigation__list site-list">
-            <li class="site-list__item"><a class="main-navigation__item site-list__link">Каталог товаров</a></li>
-            <li class="site-list__item"><a class="main-navigation__item site-list__link" href="form.html">Вязание на заказ</a></li>
-          </ul>
-          <a class="main-navigation__item main-navigation__item--search" href="#">Поиск по сайту</a>
-          <a class="main-navigation__item main-navigation__item--cart" href="#">Корзина: пока пуста</a>
-        </div>
+        <ul class="main-navigation__list">
+          <li><a class="main-navigation__item main-navigation__item--catalog">Каталог товаров</a></li>
+          <li><a class="main-navigation__item" href="form.html">Вязание на заказ</a></li>
+        </ul>
+        <ul class="main-navigation__list main-navigation__list--market ">
+          <li><a class="main-navigation__item main-navigation__item--new" href="#">Новые поступления</a></li>
+          <li><a class="main-navigation__item main-navigation__item--sale" href="#">Распродажа</a></li>
+        </ul>
+        <a class="main-navigation__item main-navigation__item--search" href="#"><span>Поиск по сайту</span></a>
+        <a class="main-navigation__item main-navigation__item--cart" href="#">Корзина: пока пуста</a>
+        <p class="page-header__info">Бесплатная доставка по России</p>
       </nav>
     </header>
     <main class="page-main">
-      <h1 class="page-main__title">Каталог товаров</h1>
+      <div class="page-main__title-wrapper">
+        <h1 class="page-main__title">Каталог товаров</h1>
+      </div>
       <section class="page-main__wrapper catalog">
         <h2 class="visually-hidden">Список товаров</h2>
         <ul class="catalog__list">
           <li class="catalog__item">
             <article class="product-card">
-              <a class="product-card__link" href="#">
-                <h3 class="product-card__title">Зайчик-попрыгайчик</h3>
-                <img class="product-card__image" src="https://via.placeholder.com/260x195" width="260" height="195" alt="Вязаный заяц в бирюзовом комбинезоне">
-              </a>
+              <a class="product-card__link product-card__link--title" href="#"><h3 class="product-card__title">Зайчик-попрыгайчик</h3></a>
+              <a class="product-card__link product-card__link--image" href="#"><img class="product-card__image" src="https://via.placeholder.com/260x195" width="260" height="195" alt="Вязаный заяц в бирюзовом комбинезоне"></a>
               <p class="product-card__specs">Рост 30 см, вес 200 г</p>
               <p class="product-card__order">
                 <b class="product-card__price">1 200 руб.</b>
@@ -43,10 +46,8 @@
           </li>
           <li class="catalog__item">
             <article class="product-card">
-              <a class="product-card__link" href="#">
-                <h3 class="product-card__title">Корзинка для белья</h3>
-                <img class="product-card__image" src="https://via.placeholder.com/260x195" width="260" height="195" alt="Круглая корзинка, наполовину белая наполовину оранжевая">
-              </a>
+              <a class="product-card__link product-card__link--title" href="#"><h3 class="product-card__title">Корзинка для белья</h3></a>
+              <a class="product-card__link product-card__link--image" href="#"><img class="product-card__image" src="https://via.placeholder.com/260x195" width="260" height="195" alt="Круглая корзинка, наполовину белая наполовину оранжевая"></a>
               <p class="product-card__specs">Диаметр 15 см, высота 10 см</p>
               <p class="product-card__order">
                 <b class="product-card__price">690 руб.</b>
@@ -56,10 +57,8 @@
           </li>
           <li class="catalog__item">
             <article class="product-card">
-              <a class="product-card__link" href="#">
-                <h3 class="product-card__title">Большая корзинка для игрушек</h3>
-                <img class="product-card__image" src="https://via.placeholder.com/260x195" width="260" height="195" alt="Круглая корзинка, наполовину салатовая наполовину белая">
-              </a>
+              <a class="product-card__link product-card__link--title" href="#"><h3 class="product-card__title">Большая корзинка для игрушек</h3></a>
+              <a class="product-card__link product-card__link--image" href="#"><img class="product-card__image" src="https://via.placeholder.com/260x195" width="260" height="195" alt="Круглая корзинка, наполовину салатовая наполовину белая"></a>
               <p class="product-card__specs">Диаметр 30 см, высота 30 см</p>
               <p class="product-card__order">
                 <b class="product-card__price">1 500 руб.</b>
@@ -83,7 +82,7 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="page-footer__logo"><img src="https://via.placeholder.com/86x35" alt="Логотип магазина товаров ручной работы «Мишка»"></a>
+        <a class="page-footer__logo" href="index.html"><img src="https://via.placeholder.com/86x35" alt="Логотип магазина товаров ручной работы «Мишка»"></a>
         <ul class="page-footer__socials socials">
           <li class="socials__item"><a class="socials__link socials__link--instagram" href="https://www.instagram.com/htmlacademy"><span class="visually-hidden">Инстаграм</span></a></li>
           <li class="socials__item"><a class="socials__link socials__link--facebook" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Фейсбук</span></a></li>
