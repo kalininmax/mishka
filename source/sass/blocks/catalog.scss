@@ -16,21 +16,24 @@
   margin: 0 auto;
   list-style: none;
 
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+  }
+
   @media (min-width: $desktop-width) {
     max-width: 1050px;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 0 50px;
     column-gap: 50px;
   }
 }
 
 .catalog__item {
   width: 100%;
-  max-width: 340px;
+  max-width: 380px;
   margin: 0 auto;
   margin-bottom: 30px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: 600px) {
     max-width: 668px;
   }
 
