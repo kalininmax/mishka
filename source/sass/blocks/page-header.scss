@@ -13,8 +13,18 @@
 }
 
 .page-header__logo {
-  padding: 22px 30px;
+  padding: 0 30px;
+  padding-top: 22px;
+  padding-bottom: 16px;
   margin: 0 auto;
+
+  &[href]:hover {
+    opacity: 0.6;
+  }
+
+  &[href]:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     padding-left: 0;
