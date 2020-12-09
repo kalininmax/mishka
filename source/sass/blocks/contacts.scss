@@ -1,11 +1,17 @@
 .contacts {
+  background-color: $basic-white;
+}
+
+.contacts__container {
   max-width: 875px;
   padding-bottom: 39px;
+  margin: 0 auto;
   font-size: 14px;
   line-height: 30px;
   color: $basic-dark;
 
   @media (min-width: $tablet-width) {
+    padding-bottom: 57px;
     font-size: 17px;
     line-height: 30px;
   }
@@ -15,11 +21,13 @@
     grid-template-columns: 290px 527px;
     column-gap: 55px;
     padding-left: 175px;
+    padding-top: 70px;
     padding-bottom: 105px;
   }
 }
 
 .contacts__wrapper {
+  position: relative;
   padding: 0 30px;
   padding-top: 38px;
   margin: 0 auto;
@@ -27,11 +35,30 @@
 
   @media (min-width: $tablet-width) {
     padding: 0 50px;
+    padding-top: 69px;
+    margin-bottom: 48px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 46px;
+      right: 53px;
+      width: 47px;
+      height: 81px;
+      background-image: url("../img/flag.svg");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding: 0;
     padding-top: 80px;
+
+    &::after {
+      top: 63px;
+      left: -112px;
+    }
   }
 }
 
@@ -44,11 +71,13 @@
 
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
+    margin-bottom: 49px;
     font-size: 43px;
     line-height: 50px;
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 35px;
     font-size: 53px;
     line-height: 57px;
   }
@@ -66,8 +95,8 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-bottom: 85px;
+    grid-template-columns: max-content 1fr;
+    margin-bottom: 0;
   }
 }
 
@@ -78,6 +107,7 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    margin-right: 25px;
   }
 }
 
@@ -85,8 +115,7 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    margin-right: auto;
+    margin-right: 50px;
 
     &:last-child {
       margin-right: 0;
@@ -101,7 +130,7 @@
   @media (min-width: $tablet-width) {
     grid-column: 2/3;
     grid-row: 1/3;
-    margin-bottom: 55px;
+    margin-bottom: 46px;
   }
 
   @media (min-width: $desktop-width) {
@@ -118,12 +147,26 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin: 0;
     margin-top: auto;
     grid-row: 2/3;
   }
 }
 
 .contacts__email-link {
-  padding-bottom: 2px;
-  border-bottom: 1px solid $basic-aquamarine;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 1px;
+    background-color: $basic-aquamarine;
+
+    @media (min-width: $desktop-width) {
+      bottom: -9px;
+    }
+  }
 }

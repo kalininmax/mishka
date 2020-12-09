@@ -1,15 +1,23 @@
 .features {
+  background-color: $basic-white;
+}
+
+.features__wrapper {
   display: flex;
   flex-direction: column;
-  padding: 0 30px;
+  padding: 31px 30px;
+  margin: 0 auto;
   max-width: 875px;
+  background-color: $basic-white;
 
   @media (min-width: $tablet-width) {
-    padding: 0 50px;
+    padding: 26px 50px;
+    padding-top: 55px;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 225px;
+    padding-top: 68px;
   }
 }
 
@@ -20,7 +28,7 @@
   line-height: 30px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 42px;
+    margin-bottom: 45px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -39,10 +47,12 @@
 
   @media (min-width: 600px) {
     grid-template-columns: 1fr 1fr;
+    margin: 0;
   }
 
-  @media (min-width: $tablet-width) {
-    column-gap: 40px;
+  @media (min-width: $desktop-width) {
+    grid-template-columns: max-content max-content;
+    column-gap: 50px;
   }
 }
 
@@ -58,6 +68,12 @@
     &:nth-child(even) {
       order: 1;
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
+    font-size: 20px;
+    line-height: 22px;
   }
 
   &:last-child {
@@ -107,10 +123,5 @@
     top: -11px;
     left: -8px;
     background-image: url("../img/gift.svg");
-  }
-
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 22px;
   }
 }

@@ -13,4 +13,8 @@
 
 .specs__name {
   width: 22%;
+
+  @media (min-width: $tablet-width) {
+    width: 20%;
+  }
 }

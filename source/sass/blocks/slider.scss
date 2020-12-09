@@ -29,6 +29,12 @@
   text-align: left;
   cursor: pointer;
 
+  @media (min-width: $tablet-width) {
+    width: auto;
+    padding: 14px 19px;
+    border: 0;
+  }
+
   &:hover {
     .slider__toggle-icon {
       opacity: 0.6;

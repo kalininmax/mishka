@@ -39,15 +39,18 @@
     display: grid;
     grid-template-columns: 292px 1fr;
     column-gap: 42px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: 50px;
+    padding-bottom: 68px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 292px 525px;
+    grid-template-rows: min-content 1fr;
     padding-top: 54px;
+    padding-bottom: 96px;
     padding-left: 225px;
     column-gap: 58px;
+    row-gap: 36px;
   }
 }
 
@@ -70,15 +73,17 @@
 
   @media (min-width: $tablet-width) {
     max-width: 875px;
+    padding-right: 13px;
     margin: 0;
-    margin-bottom: 35px;
+    margin-bottom: 39px;
     font-size: 43px;
     line-height: 50px;
   }
 
   @media (min-width: $desktop-width) {
     grid-row: 1/2;
-    margin-top: 70px;
+    margin-top: 77px;
+    margin-bottom: 0;
     font-size: 53px;
     line-height: 57px;
     z-index: 2;
@@ -86,22 +91,22 @@
 }
 
 .hit__text {
-  margin-top: 4px;
+  margin-top: 7px;
   order: 2;
   font-size: 17px;
-  line-height: 20px;
+  line-height: 17px;
   text-transform: uppercase;
   color: $basic-aquamarine;
 
   @media (min-width: 430px) {
-    text-align: center;
     width: 100px;
+    text-align: center;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 0;
-    left: -150px;
+    top: 1px;
+    left: -143px;
   }
 }
 
@@ -112,7 +117,7 @@
   color: $basic-dark;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 24px;
+    margin-bottom: 57px;
   }
 }
 
@@ -125,6 +130,10 @@
     margin-bottom: 38px;
     font-size: 17px;
     line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 50px;
   }
 }
 
@@ -143,10 +152,12 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    margin-top: 12px;
   }
 
   @media (min-width: $desktop-width) {
     grid-row: 1/4;
+    margin-top: 16px;
   }
 }
 
@@ -167,4 +178,8 @@
   max-width: 292px;
   margin: 0 auto;
   margin-top: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 30px;
+  }
 }
