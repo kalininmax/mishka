@@ -1,12 +1,28 @@
 .socials {
   display: flex;
   justify-content: space-between;
-  width: 140px;
+  width: 150px;
 }
 
 .socials__link {
-  display: block;
-  width: 20px;
-  height: 20px;
-  background-color: $basic-aquamarine;
+  display: flex;
+  width: 30px;
+  height: 30px;
+
+  &:hover {
+    svg {
+      fill: #46c1ae;
+    }
+  }
+
+  &:active {
+    svg {
+      fill: rgba(#46c1ae, 0.3);
+    }
+  }
 }
+
+.social__item-icons {
+  margin: auto;
+}
+
