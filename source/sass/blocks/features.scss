@@ -49,7 +49,7 @@
 .features__item {
   position: relative;
   padding-top: 54px;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
   line-height: 20px;
   font-weight: 700;
   max-width: 300px;
@@ -67,11 +67,46 @@
   &::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 40px;
-    height: 40px;
-    background-color: $basic-grey;
+    width: 55px;
+    height: 55px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  &--flower::before {
+    top: -10px;
+    left: -3px;
+    background-image: url("../img/flower.svg");
+  }
+
+  &--ball::before {
+    top: -9px;
+    left: -7px;
+    background-image: url("../img/ball.svg");
+  }
+
+  &--money::before {
+    top: -14px;
+    left: -4px;
+    background-image: url("../img/money.svg");
+  }
+
+  &--rocket::before {
+    top: -13px;
+    left: -6px;
+    background-image: url("../img/rocket.svg");
+  }
+
+  &--heart::before {
+    top: -9px;
+    left: -4px;
+    background-image: url("../img/heart.svg");
+  }
+
+  &--gift::before {
+    top: -11px;
+    left: -8px;
+    background-image: url("../img/gift.svg");
   }
 
   @media (min-width: $tablet-width) {
