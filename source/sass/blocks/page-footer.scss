@@ -21,6 +21,18 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+
+    &:hover {
+      svg {
+        fill: #46c1ae;
+      }
+    }
+
+    &:active {
+      svg {
+        fill: rgba(#46c1ae, 0.3);
+      }
+    }
   }
 }
 
@@ -32,6 +44,8 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    margin-top: 3px;
+    margin-left: 12px;
   }
 }
 
@@ -41,5 +55,6 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    box-shadow: none;
   }
 }
