@@ -10,6 +10,7 @@
     height: 6px;
     background-image: url("../img/zigzag-line-mobile.svg");
     background-position: 50% 0;
+    background-repeat: no-repeat;
   }
 
   @media (min-width: $tablet-width) {
@@ -111,16 +112,6 @@
   font-size: 17px;
   line-height: 30px;
   font-style: normal;
-}
-
-.reviews__author-name {
-  font-weight: 700;
-  color: $basic-black;
-
-  @media (min-width: $tablet-width) {
-    font-size: 18px;
-    line-height: 24px;
-  }
 }
 
 .reviews__toggles {
