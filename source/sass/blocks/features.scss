@@ -41,6 +41,7 @@
 
 .features__list {
   display: grid;
+  row-gap: 29px;
   padding: 0;
   margin: 0 auto;
   list-style: none;
@@ -48,18 +49,21 @@
   @media (min-width: 600px) {
     grid-template-columns: 1fr 1fr;
     margin: 0;
+    row-gap: 57px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: max-content max-content;
+    max-width: 650px;
     column-gap: 50px;
+    row-gap: 55px;
   }
 }
 
 .features__item {
   position: relative;
   padding-top: 54px;
-  margin-bottom: 29px;
+  // margin-bottom: 29px;
+  margin: 0;
   line-height: 20px;
   font-weight: 700;
   max-width: 300px;
@@ -71,13 +75,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 55px;
     font-size: 20px;
     line-height: 22px;
-  }
-
-  &:last-child {
-    margin-bottom: 0;
   }
 
   &::before {
