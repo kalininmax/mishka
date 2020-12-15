@@ -21,9 +21,31 @@
 
 .slider__toggle {
   width: 130px;
-  padding: 13px 0;
+  padding: 0 38px;
+  padding-top: 12px;
+  padding-bottom: 9px;
   border: 1px solid $special-grey;
   background-color: $basic-white;
+  text-align: left;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    padding: 14px 19px;
+    border: 0;
+  }
+
+  &:hover {
+    .slider__toggle-icon {
+      opacity: 0.6;
+    }
+  }
+
+  &:active {
+    .slider__toggle-icon {
+      opacity: 0.3;
+    }
+  }
 
   &:last-child {
     border-left: 0;

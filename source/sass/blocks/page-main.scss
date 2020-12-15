@@ -1,11 +1,12 @@
 .page-main--index {
+  background-color: #f9f9f9;
   background-image: url("../img/index-bg-mobile.jpg");
   background-repeat: no-repeat;
-  background-position: 50% 0;
-  background-size: contain;
+  background-position: 50% -17px;
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/index-bg.jpg");
+    background-position: 50% 0;
   }
 }
 
@@ -36,36 +37,26 @@
 }
 
 .page-main__title--index {
-  margin-top: 73px;
-  margin-bottom: 135px;
+  margin-bottom: 45px;
   background: none;
 
   @media (min-width: $tablet-width) {
-    margin-top: 155px;
-    margin-bottom: 372px;
+    margin-top: 55px;
+    margin-bottom: 296px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 158px;
-    margin-bottom: 355px;
+    margin-top: 57px;
+    margin-bottom: 280px;
   }
 }
 
-.page-main__categories {
-  margin: 0 auto;
-}
-
 .page-main__hit {
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
 }
 
 .page-main__features {
   margin: 0 auto;
-  margin-bottom: 60px;
-}
-
-.page-main__reviews {
-  margin-bottom: 40px;
 }
 
 .page-main__contacts {

@@ -2,8 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 185px;
-  padding-top: 30px;
+  width: 193px;
+  padding-top: 25px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -11,12 +11,33 @@
 }
 
 .copyright__text {
+  padding-left: 5px;
   font-size: 19px;
+  line-height: 19px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 10px;
+  }
 }
 
 .copyright__link {
   display: block;
-  width: 20px;
-  height: 20px;
-  background-color: $basic-aquamarine;
+  width: 39px;
+  height: 34px;
+
+  svg {
+    fill: $basic-aquamarine;
+  }
+
+  &:hover {
+    svg {
+      fill: #46c1ae;
+    }
+  }
+
+  &:active {
+    svg {
+      fill: rgba(#46c1ae, 0.3);
+    }
+  }
 }

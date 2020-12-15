@@ -1,15 +1,25 @@
 .button {
   display: block;
-  padding: 16px 11px;
+  padding: 14px 11px;
   border: 2px solid $basic-dark;
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
+  color: $basic-dark;
   background-color: $basic-white;
   cursor: pointer;
   box-sizing: border-box;
+
+  &:hover {
+    color: $basic-white;
+    background-color: $basic-dark;
+  }
+
+  &:active {
+    color: rgba($basic-white, 0.3);
+  }
 
   &--to-cart {
     padding-top: 18px;

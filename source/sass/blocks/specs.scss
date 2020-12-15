@@ -5,10 +5,16 @@
 
 .specs__item {
   display: flex;
-  padding: 10px 0;
+  padding: 0;
+  padding-top: 9px;
+  padding-bottom: 11px;
   border-bottom: 1px solid $basic-grey;
 }
 
 .specs__name {
-  width: 25%;
+  width: 22%;
+
+  @media (min-width: $tablet-width) {
+    width: 20%;
+  }
 }

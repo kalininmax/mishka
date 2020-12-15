@@ -13,8 +13,18 @@
 }
 
 .page-header__logo {
-  padding: 22px 30px;
+  padding: 0 30px;
+  padding-top: 22px;
+  padding-bottom: 16px;
   margin: 0 auto;
+
+  &[href]:hover {
+    opacity: 0.6;
+  }
+
+  &[href]:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     padding-left: 0;
@@ -23,13 +33,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 100px;
+    margin: 0 auto;
   }
 }
 
 .page-header__info {
   position: absolute;
-  top: 105px;
+  top: 110px;
   right: 0;
   margin: 0;
   font-size: 15px;

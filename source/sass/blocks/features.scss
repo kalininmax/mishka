@@ -1,15 +1,25 @@
 .features {
+  background-color: $basic-white;
+}
+
+.features__wrapper {
   display: flex;
   flex-direction: column;
-  padding: 0 30px;
+  padding: 31px 30px;
+  margin: 0 auto;
   max-width: 875px;
+  background-color: $basic-white;
 
   @media (min-width: $tablet-width) {
-    padding: 0 50px;
+    padding: 26px 50px;
+    padding-top: 55px;
+    padding-bottom: 78px;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 225px;
+    padding-top: 68px;
+    padding-bottom: 81px;
   }
 }
 
@@ -20,7 +30,7 @@
   line-height: 30px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 42px;
+    margin-bottom: 45px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -33,23 +43,29 @@
 
 .features__list {
   display: grid;
+  row-gap: 29px;
   padding: 0;
   margin: 0 auto;
   list-style: none;
 
   @media (min-width: 600px) {
     grid-template-columns: 1fr 1fr;
+    margin: 0;
+    row-gap: 57px;
   }
 
-  @media (min-width: $tablet-width) {
-    column-gap: 40px;
+  @media (min-width: $desktop-width) {
+    max-width: 650px;
+    column-gap: 50px;
+    row-gap: 55px;
   }
 }
 
 .features__item {
   position: relative;
   padding-top: 54px;
-  margin-bottom: 30px;
+  // margin-bottom: 29px;
+  margin: 0;
   line-height: 20px;
   font-weight: 700;
   max-width: 300px;
@@ -60,22 +76,53 @@
     }
   }
 
-  &:last-child {
-    margin-bottom: 0;
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
   }
 
   &::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 40px;
-    height: 40px;
-    background-color: $basic-grey;
+    width: 55px;
+    height: 55px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
   }
 
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 22px;
+  &--flower::before {
+    top: -10px;
+    left: -3px;
+    background-image: url("../img/flower.svg");
+  }
+
+  &--ball::before {
+    top: -9px;
+    left: -7px;
+    background-image: url("../img/ball.svg");
+  }
+
+  &--money::before {
+    top: -14px;
+    left: -4px;
+    background-image: url("../img/money.svg");
+  }
+
+  &--rocket::before {
+    top: -13px;
+    left: -6px;
+    background-image: url("../img/rocket.svg");
+  }
+
+  &--heart::before {
+    top: -9px;
+    left: -4px;
+    background-image: url("../img/heart.svg");
+  }
+
+  &--gift::before {
+    top: -11px;
+    left: -8px;
+    background-image: url("../img/gift.svg");
   }
 }

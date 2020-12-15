@@ -1,20 +1,57 @@
 .reviews {
+  position: relative;
+  background-color: $basic-white;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 6px;
+    background-image: url("../img/zigzag-line-mobile.svg");
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      height: 17px;
+      background-image: url("../img/zigzag-line-tablet.svg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      height: 23px;
+      background-image: url("../img/zigzag-line-desktop.svg");
+    }
+  }
+}
+
+.reviews__wrapper {
   max-width: 875px;
   padding: 0 30px;
-  padding-bottom: 50px;
+  padding-top: 25px;
+  padding-bottom: 51px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr min-content;
-    row-gap: 40px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 83px;
+    row-gap: 38px;
+    padding: 0 50px;
+    padding-top: 82px;
+    padding-bottom: 130px;
+    background-image: url("../img/reviews-bg.png");
+    background-repeat: no-repeat;
+    background-position: 0 3px;
   }
 
   @media (min-width: $desktop-width) {
+    row-gap: 35px;
     padding-left: 225px;
+    padding-bottom: 184px;
+    background-position: 50px 8px;
   }
 }
 
@@ -26,6 +63,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    margin-top: 5px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -37,12 +75,16 @@
 }
 
 .reviews__list {
-  margin-bottom: 30px;
+  margin-bottom: 29px;
 
   @media (min-width: $tablet-width) {
     grid-column: 1/-1;
     grid-row: 2/3;
     margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 802px;
   }
 }
 
@@ -55,9 +97,13 @@
   margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 60px;
+    margin-bottom: 57px;
     font-size: 17px;
     line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 42px;
   }
 }
 
@@ -69,17 +115,19 @@
 }
 
 .reviews__author-name {
-  font-weight: 700;
-  color: $basic-black;
+  font-size: 17px;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
-    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 17px;
   }
 }
 
 .reviews__toggles {
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 
   @media (min-width: $tablet-width) {
     grid-column: 2/3;
@@ -94,5 +142,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: auto;
     margin-left: auto;
+    min-width: 175px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 5px;
   }
 }

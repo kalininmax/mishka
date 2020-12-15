@@ -4,6 +4,7 @@
   flex-direction: column;
   max-width: 1050px;
   font-weight: 700;
+  box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -14,14 +15,47 @@
 
 .main-navigation__toggle {
   position: absolute;
-  right: 50px;
-  top: 30px;
+  top: 29px;
+  right: 31px;
   width: 20px;
   height: 20px;
   border: 0;
+  background-color: transparent;
 
   @media (min-width: $tablet-width) {
     display: none;
+  }
+}
+
+.main-navigation--closed .main-navigation__toggle::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 20px;
+  height: 2px;
+  background-color: $basic-black;
+  box-shadow: 0 6px 0 0 $basic-black, 0 12px 0 0 $basic-black;
+}
+
+.main-navigation--opened .main-navigation__toggle {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: -3px;
+    width: 27px;
+    height: 2px;
+    background-color: $basic-black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
   }
 }
 
@@ -36,18 +70,22 @@
     top: 85px;
     left: 0;
     display: flex;
-    order: 2;
+    justify-content: space-between;
+    width: 305px;
+    font-size: 15px;
   }
 
   @media (min-width: $desktop-width) {
     position: static;
     order: -1;
+    width: auto;
+    font-size: 17px;
   }
 
   &--market {
     position: absolute;
     display: none;
-    top: 85px;
+    top: 88px;
     left: 0;
 
     @media (min-width: $desktop-width) {
@@ -59,18 +97,34 @@
 .main-navigation__item {
   display: block;
   padding-top: 29px;
-  padding-bottom: 27px;
+  padding-bottom: 26px;
   padding-left: 76px;
+  padding-right: 35px;
   box-shadow: 0 1px 0 $special-grey, inset 0 1px 0 $special-grey;
+
+  &[href]:hover {
+    color: rgba($basic-black, 0.6);
+
+    .main-navigation__item-icon {
+      opacity: 1;
+      fill: $basic-aquamarine;
+    }
+  }
+
+  &[href]:active {
+    color: rgba($basic-black, 0.3);
+  }
 
 
   @media (min-width: $tablet-width) {
     box-shadow: none;
-    padding: 20px 0;
+    padding: 25px 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 30px;
+    padding-top: 33px;
+    padding-left: 35px;
+    padding-right: 35px;
   }
 
   &--search,
@@ -78,15 +132,16 @@
     display: flex;
     align-items: center;
     padding-left: 32px;
-  }
 
-  &--search::before,
-  &--cart::before {
-    content: "";
-    width: 18px;
-    height: 18px;
-    margin-right: 25px;
-    background-color: $special-grey;
+    @media (min-width: $tablet-width) {
+      padding: 0 32px;
+      padding-top: 33px;
+      padding-bottom: 31px;
+
+      .main-navigation__item-icon {
+        margin: 0;
+      }
+    }
   }
 
   &--search span {
@@ -97,7 +152,6 @@
 
   &--search {
     @media (min-width: $tablet-width) {
-      padding: 30px;
       border-left: 1px solid rgba($basic-black, 0.1);
       border-right: 1px solid rgba($basic-black, 0.1);
     }
@@ -123,11 +177,28 @@
   }
 
   &--catalog {
-    padding-right: 35px;
-
     @media (min-width: $desktop-width) {
       padding-left: 0;
       border-right: 1px solid rgba($basic-black, 0.1);
     }
+  }
+}
+
+.main-navigation--closed .main-navigation__item {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
+.main-navigation__item-icon {
+  margin-right: 26px;
+  opacity: 0.2;
+}
+
+.main-navigation__item--cart .main-navigation__item-icon {
+  margin-right: 23px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 31px;
   }
 }
