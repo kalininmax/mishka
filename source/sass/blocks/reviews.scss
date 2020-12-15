@@ -97,7 +97,7 @@
   margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 60px;
+    margin-bottom: 57px;
     font-size: 17px;
     line-height: 30px;
   }
@@ -112,6 +112,18 @@
   font-size: 17px;
   line-height: 30px;
   font-style: normal;
+}
+
+.reviews__author-name {
+  font-size: 17px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 17px;
+  }
 }
 
 .reviews__toggles {
