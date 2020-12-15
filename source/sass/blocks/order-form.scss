@@ -1,8 +1,14 @@
 .order-form {
   padding: 17px 0;
+  padding-bottom: 28px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 80px;
+    padding-top: 55px;
+    padding-bottom: 11px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 115px;
   }
 }
 
@@ -11,7 +17,7 @@
   padding-left: 30px;
   padding-right: 30px;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   font-size: 13px;
 
   @media (min-width: $tablet-width) {
@@ -28,22 +34,28 @@
 
 .order-form__fieldset {
   position: relative;
-  max-width: 680px;
+  max-width: 700px;
   padding: 0;
   margin: 0 auto;
-  margin-bottom: 35px;
   border: 0;
 
   @media (min-width: $tablet-width) {
-    padding-left: 160px;
+    padding-left: 170px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 115px;
   }
 }
 
 .order-form__wrapper {
   padding: 0 30px;
+  margin-bottom: 27px;
+
 
   @media (min-width: $tablet-width) {
-    padding: 50px;
+    padding: 39px 50px;
+    margin-bottom: 18px;
 
     &:nth-child(odd) {
       background-color: $basic-grey;
@@ -51,6 +63,68 @@
 
     &:last-child {
       background-color: $basic-white;
+    }
+  }
+}
+
+.order-form__wrapper--color {
+  @media (min-width: $tablet-width) {
+    padding: 50px;
+    padding-bottom: 60px;
+    margin-bottom: 20px;
+
+    .order-form__fieldset {
+      padding-left: 167px;
+      max-width: 765px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .order-form__fieldset {
+      padding-left: 115px;
+      padding-right: 50px;
+    }
+  }
+}
+
+.order-form__wrapper--name {
+  @media (min-width: $tablet-width) {
+    padding: 33px 50px;
+    padding-bottom: 32px;
+
+    .order-form__fieldset {
+      padding-left: 167px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .order-form__fieldset {
+      padding-left: 115px;
+    }
+  }
+}
+
+.order-form__wrapper--contacts {
+  @media (min-width: $tablet-width) {
+    padding: 46px 50px;
+    padding-bottom: 50px;
+  }
+}
+
+.order-form__wrapper--message {
+  margin-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    padding: 28px 50px;
+    padding-bottom: 23px;
+    margin-bottom: 0;
+
+    .order-form__fieldset {
+      padding-left: 167px;
+
+      @media (min-width: $desktop-width) {
+        padding-left: 115px;
+      }
     }
   }
 }
@@ -64,6 +138,10 @@
     padding-top: 0;
     margin: 0 auto;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 700px;
+  }
 }
 
 .order-form__title {
@@ -71,14 +149,14 @@
   align-items: center;
   width: 100%;
   padding: 0;
-  margin-bottom: 23px;
+  margin-bottom: 26px;
   text-transform: uppercase;
   font-weight: 700;
   color: $basic-aquamarine;
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 8px;
+    top: 13px;
     left: 0;
     max-width: 140px;
   }
@@ -97,28 +175,54 @@
   }
 }
 
+.order-form__title--color {
+  margin-bottom: 20px;
+}
+
 .order-form__title--name {
-  @media (min-width: $tablet-width) {
-    top: 20px;
-  }
+  margin-bottom: 21px;
 }
 
 .order-form__list {
   display: grid;
-  row-gap: 20px;
+  row-gap: 11px;
   padding: 0;
   margin: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    row-gap: 35px;
+  }
 }
 
 .order-form__list--color {
+  row-gap: 19px;
+
   @media (min-width: 530px) {
     grid-template-columns: 1fr 1fr;
-    column-gap: 60px;
+    column-gap: 23px;
+    row-gap: 34px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 23px;
+  }
+}
+
+.order-form__list--name {
+  row-gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    row-gap: 27px;
+  }
+}
+
+.order-form__list--contacts {
+  row-gap: 30px;
+
+  @media (min-width: $tablet-width) {
+    row-gap: 24px;
   }
 }
 
@@ -142,15 +246,16 @@
   width: 100%;
   max-width: 260px;
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 27px;
   font-size: 17px;
 
   @media (min-width: 650px) {
+    max-width: 230px;
     margin: 0;
     margin-top: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 160px;
+    margin-top: 25px;
   }
 }
