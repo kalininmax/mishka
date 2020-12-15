@@ -15,26 +15,69 @@
 
   @media (min-width: $tablet-width) {
     padding-right: 25px;
+    font-size: 19px;
+    line-height: 20px;
   }
 }
 
 .form-text--phone .form-text__label,
 .form-text--email .form-text__label, {
+  margin-top: 3px;
+
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 18px;
-    left: -160px;
+    top: 16px;
+    left: -170px;
+    font-size: 17px;
+    line-height: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: -115px;
   }
 }
 
 .form-text__input {
   flex-grow: 1;
-  padding: 17px;
+  padding: 14px;
   border: 0;
   border-bottom: 2px solid $basic-black;
   font-family: inherit;
-  font-size: 19px;
+  font-size: 17px;
+  line-height: 18px;
   background-color: transparent;
+
+  @media (max-width: $mobile-width-only) {
+    padding-left: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 13px;
+    font-size: 19px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 17px;
+  }
+}
+
+.form-text--phone input {
+  padding-top: 17px;
+  padding-bottom: 15px;
+
+  @media (max-width: $mobile-width-only) {
+    padding-left: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 17px;
+  }
+}
+
+.form-text--email input {
+  padding-top: 17px;
+  padding-bottom: 13px;
 
   @media (max-width: $mobile-width-only) {
     padding-left: 0;
