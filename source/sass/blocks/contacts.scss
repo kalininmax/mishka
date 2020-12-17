@@ -169,4 +169,13 @@
       bottom: -9px;
     }
   }
+
+  &:hover,
+  &:focus {
+    color: $basic-aquamarine;
+  }
+
+  &:active::after {
+    opacity: 0.1;
+  }
 }
