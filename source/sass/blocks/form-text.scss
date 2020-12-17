@@ -9,6 +9,46 @@
   }
 }
 
+.form-text--phone::after {
+  content: "";
+  position: absolute;
+  top: 38px;
+  right: 7px;
+  width: 25px;
+  height: 24px;
+  background-image: url("../img/phone.svg");
+
+  @media (min-width: $tablet-width) {
+    top: 15px;
+    right: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 16px;
+    right: 8px;
+  }
+}
+
+.form-text--email::after {
+  content: "";
+  position: absolute;
+  top: 43px;
+  right: 3px;
+  width: 32px;
+  height: 21px;
+  background-image: url("../img/mail.svg");
+
+  @media (min-width: $tablet-width) {
+    top: 22px;
+    right: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 22px;
+    right: 4px;
+  }
+}
+
 .form-text__label {
   margin-bottom: 0;
   font-weight: 700;
@@ -16,7 +56,7 @@
   @media (min-width: $tablet-width) {
     padding-right: 25px;
     font-size: 19px;
-    line-height: 20px;
+    line-height: 24px;
   }
 }
 
@@ -26,10 +66,10 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 16px;
+    top: 18px;
     left: -170px;
     font-size: 17px;
-    line-height: 18px;
+    line-height: 14px;
   }
 
   @media (min-width: $desktop-width) {
@@ -37,14 +77,20 @@
   }
 }
 
+.form-text--email .form-text__label {
+  @media (min-width: $tablet-width) {
+    top: 22px;
+  }
+}
+
 .form-text__input {
   flex-grow: 1;
-  padding: 14px;
+  padding: 10px;
   border: 0;
   border-bottom: 2px solid $basic-black;
   font-family: inherit;
   font-size: 17px;
-  line-height: 18px;
+  line-height: 26px;
   background-color: transparent;
 
   @media (max-width: $mobile-width-only) {
@@ -52,34 +98,57 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 13px;
+    padding-left: 18px;
+    padding-bottom: 11px;
     font-size: 19px;
-    line-height: 20px;
+    line-height: 26px;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 17px;
   }
+
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+    border-color: $special-aquamarine;
+  }
 }
 
 .form-text--phone input {
-  padding-top: 17px;
-  padding-bottom: 15px;
+  padding-bottom: 14px;
 
   @media (max-width: $mobile-width-only) {
     padding-left: 0;
   }
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 17px;
+    padding-top: 14px;
+    padding-left: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 17px;
+    padding-bottom: 15px;
   }
 }
 
 .form-text--email input {
-  padding-top: 17px;
-  padding-bottom: 13px;
+  padding-top: 13px;
+  padding-bottom: 11px;
 
   @media (max-width: $mobile-width-only) {
     padding-left: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 17px;
+    padding-bottom: 13px;
+    padding-left: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 17px;
   }
 }
