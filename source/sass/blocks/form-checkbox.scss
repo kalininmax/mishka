@@ -9,12 +9,17 @@
   margin-top: -2px;
   font-weight: 700;
   word-break: break-all;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     padding-left: 40px;
-    margin-top: 7px;
+    margin-top: 10px;
     font-size: 19px;
     line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 16px;
   }
 
   &::before {
@@ -49,6 +54,16 @@
       height: 23px;
       background-size: contain;
     }
+  }
+
+  &:hover::before,
+  &:focus::before {
+    border-color: $special-aquamarine;
+  }
+
+  &:active::before {
+    border-color: $basic-black;
+    opacity: 0.3;
   }
 }
 
