@@ -1,6 +1,6 @@
 .form-message {
   position: relative;
-  padding-top: 4px;
+  padding-top: 5px;
 
   @media (min-width: $tablet-width) {
     padding-left: 160px;
@@ -8,11 +8,12 @@
 }
 
 .form-message__label {
+  display: block;
   margin-bottom: 18px;
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 18px;
+    top: 21px;
     left: 0;
   }
 }
@@ -31,5 +32,12 @@
   @media (min-width: $tablet-width) {
     font-size: 19px;
     line-height: 20px;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+    border-color: $special-aquamarine;
   }
 }
