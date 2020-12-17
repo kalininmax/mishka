@@ -55,7 +55,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 39px 50px;
-    margin-bottom: 18px;
+    margin-bottom: 17px;
 
     &:nth-child(odd) {
       background-color: $basic-grey;
@@ -69,7 +69,7 @@
 
 .order-form__wrapper--color {
   @media (min-width: $tablet-width) {
-    padding: 50px;
+    padding: 51px 50px;
     padding-bottom: 60px;
     margin-bottom: 20px;
 
@@ -80,6 +80,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding: 47px 50px;
+    padding-bottom: 63px;
+
     .order-form__fieldset {
       padding-left: 115px;
       padding-right: 50px;
@@ -90,7 +93,7 @@
 .order-form__wrapper--name {
   @media (min-width: $tablet-width) {
     padding: 33px 50px;
-    padding-bottom: 32px;
+    padding-bottom: 33px;
 
     .order-form__fieldset {
       padding-left: 167px;
@@ -109,6 +112,10 @@
     padding: 46px 50px;
     padding-bottom: 50px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 49px;
+  }
 }
 
 .order-form__wrapper--message {
@@ -116,7 +123,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 28px 50px;
-    padding-bottom: 23px;
+    padding-bottom: 24px;
     margin-bottom: 0;
 
     .order-form__fieldset {
@@ -145,9 +152,9 @@
 }
 
 .order-form__title {
-  display: flex;
-  align-items: center;
+  position: relative;
   width: 100%;
+  min-height: 24px;
   padding: 0;
   margin-bottom: 26px;
   text-transform: uppercase;
@@ -163,9 +170,10 @@
 
   &::after {
     content: "";
-    flex-grow: 1;
-    width: 100px;
-    margin-left: 22px;
+    position: absolute;
+    top: 11px;
+    left: 0;
+    width: 100%;
     height: 1px;
     background-color: $special-aquamarine;
 
@@ -175,11 +183,25 @@
   }
 }
 
+.order-form__title span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  padding-right: 23px;
+  background-color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+  }
+}
+
 .order-form__title--color {
   margin-bottom: 20px;
 }
 
 .order-form__title--name {
+  margin-top: -2px;
   margin-bottom: 21px;
 }
 
@@ -219,10 +241,10 @@
 }
 
 .order-form__list--contacts {
-  row-gap: 30px;
+  row-gap: 28px;
 
   @media (min-width: $tablet-width) {
-    row-gap: 24px;
+    row-gap: 18px;
   }
 }
 
@@ -246,7 +268,7 @@
   width: 100%;
   max-width: 260px;
   margin: 0 auto;
-  margin-top: 27px;
+  margin-top: 26px;
   font-size: 17px;
 
   @media (min-width: 650px) {
