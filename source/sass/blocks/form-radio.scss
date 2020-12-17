@@ -10,11 +10,16 @@
   font-size: 17px;
   line-height: 18px;
   font-weight: 700;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     padding-left: 35px;
     font-size: 19px;
     line-height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 38px;
   }
 
   &::before {
@@ -49,6 +54,16 @@
       width: 20px;
       height: 20px;
     }
+  }
+
+  &:hover::before,
+  &:focus::before {
+    border-color: $special-aquamarine;
+  }
+
+  &:active::before {
+    border-color: $basic-black;
+    opacity: 0.3;
   }
 }
 
