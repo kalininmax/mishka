@@ -55,7 +55,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 39px 50px;
-    margin-bottom: 17px;
+    margin-bottom: 13px;
 
     &:nth-child(odd) {
       background-color: $basic-grey;
@@ -65,12 +65,17 @@
       background-color: $basic-white;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 12px;
+  }
 }
 
 .order-form__wrapper--color {
+  margin-bottom: 30px;
+
   @media (min-width: $tablet-width) {
-    padding: 51px 50px;
-    padding-bottom: 60px;
+    padding: 50px;
     margin-bottom: 20px;
 
     .order-form__fieldset {
@@ -80,8 +85,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 47px 50px;
-    padding-bottom: 63px;
+    padding: 48px 50px;
+    padding-bottom: 52px;
 
     .order-form__fieldset {
       padding-left: 115px;
@@ -93,7 +98,7 @@
 .order-form__wrapper--name {
   @media (min-width: $tablet-width) {
     padding: 33px 50px;
-    padding-bottom: 33px;
+    padding-bottom: 37px;
 
     .order-form__fieldset {
       padding-left: 167px;
@@ -101,6 +106,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-bottom: 38px;
+
     .order-form__fieldset {
       padding-left: 115px;
     }
@@ -122,7 +129,7 @@
   margin-bottom: 12px;
 
   @media (min-width: $tablet-width) {
-    padding: 28px 50px;
+    padding: 32px 50px;
     padding-bottom: 24px;
     margin-bottom: 0;
 
@@ -213,17 +220,17 @@
   list-style: none;
 
   @media (min-width: $tablet-width) {
-    row-gap: 35px;
+    row-gap: 26px;
   }
 }
 
 .order-form__list--color {
-  row-gap: 19px;
+  row-gap: 23px;
 
   @media (min-width: 530px) {
     grid-template-columns: 1fr 1fr;
-    column-gap: 23px;
-    row-gap: 34px;
+    column-gap: 21px;
+    row-gap: 24px;
   }
 
   @media (min-width: $desktop-width) {
