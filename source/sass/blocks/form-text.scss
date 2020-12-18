@@ -15,28 +15,142 @@
 
   @media (min-width: $tablet-width) {
     padding-right: 25px;
+    font-size: 19px;
+    line-height: 24px;
   }
 }
 
 .form-text--phone .form-text__label,
 .form-text--email .form-text__label, {
+  margin-top: 3px;
+
   @media (min-width: $tablet-width) {
     position: absolute;
     top: 18px;
-    left: -160px;
+    left: -170px;
+    font-size: 17px;
+    line-height: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: -115px;
+  }
+}
+
+.form-text--email .form-text__label {
+  @media (min-width: $tablet-width) {
+    top: 22px;
   }
 }
 
 .form-text__input {
   flex-grow: 1;
-  padding: 17px;
+  padding: 10px;
   border: 0;
   border-bottom: 2px solid $basic-black;
   font-family: inherit;
-  font-size: 19px;
+  font-size: 17px;
+  line-height: 26px;
   background-color: transparent;
+  z-index: 1;
 
   @media (max-width: $mobile-width-only) {
     padding-left: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 18px;
+    padding-bottom: 11px;
+    font-size: 19px;
+    line-height: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 17px;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+    border-color: $special-aquamarine;
+  }
+}
+
+.form-text__input:hover + .form-text__icon {
+  fill: $special-aquamarine;
+  opacity: 1;
+}
+
+.form-text--phone input {
+  padding-bottom: 14px;
+
+  @media (max-width: $mobile-width-only) {
+    padding-left: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 14px;
+    padding-left: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 17px;
+    padding-bottom: 15px;
+  }
+}
+
+.form-text--email input {
+  padding-top: 13px;
+  padding-bottom: 11px;
+
+  @media (max-width: $mobile-width-only) {
+    padding-left: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 17px;
+    padding-bottom: 13px;
+    padding-left: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 17px;
+  }
+}
+
+.form-text__icon {
+  position: absolute;
+  fill: $basic-black;
+  opacity: 0.2;
+}
+
+.form-text--phone .form-text__icon {
+  top: 38px;
+  right: 7px;
+
+  @media (min-width: $tablet-width) {
+    top: 15px;
+    right: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 16px;
+    right: 8px;
+  }
+}
+
+.form-text--email .form-text__icon {
+  top: 43px;
+  right: 3px;
+
+  @media (min-width: $tablet-width) {
+    top: 22px;
+    right: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 22px;
+    right: 4px;
   }
 }

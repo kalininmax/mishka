@@ -1,24 +1,44 @@
 .form-radio {
+  position: relative;
   display: flex;
   align-items: center;
-  position: relative;
 }
 
 .form-radio__label {
-  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  min-height: 42px;
+  padding-left: 58px;
   font-size: 17px;
   line-height: 18px;
   font-weight: 700;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    min-height: 49px;
+    padding-left: 75px;
+    font-size: 19px;
+    line-height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 78px;
+  }
 
   &::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
-    width: 38px;
-    height: 38px;
+    width: 36px;
+    height: 36px;
     border: 2px solid $basic-dark;
     border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      width: 45px;
+      height: 45px;
+    }
   }
 
   .form-radio__input:checked + &::after {
@@ -26,17 +46,42 @@
     position: absolute;
     top: 12px;
     left: 12px;
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
     border-radius: 50%;
     background-color: $special-aquamarine;
+
+    @media (min-width: $tablet-width) {
+      top: 14px;
+      left: 15px;
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &:hover::before,
+  &:focus::before {
+    border-color: $special-aquamarine;
+  }
+
+  &:active::before {
+    border-color: $basic-black;
+    opacity: 0.3;
   }
 }
 
 .form-radio__input {
+  position: absolute;
+  top: 0;
+  left: 0;
   flex-shrink: 0;
   width: 42px;
   height: 42px;
   margin: 0;
   opacity: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 49px;
+    height: 49px;
+  }
 }

@@ -1,5 +1,6 @@
 .form-message {
   position: relative;
+  padding-top: 5px;
 
   @media (min-width: $tablet-width) {
     padding-left: 160px;
@@ -7,19 +8,36 @@
 }
 
 .form-message__label {
+  display: block;
+  margin-bottom: 18px;
+
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 18px;
+    top: 21px;
     left: 0;
   }
 }
 
 .form-message__textarea {
+  display: block;
   width: 100%;
-  min-height: 138px;
+  min-height: 142px;
   border: 2px solid $basic-black;
-  padding: 17px;
+  padding: 15px;
   font-family: inherit;
-  font-size: 19px;
+  font-size: 17px;
+  line-height: 18px;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+    line-height: 20px;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+    border-color: $special-aquamarine;
+  }
 }
