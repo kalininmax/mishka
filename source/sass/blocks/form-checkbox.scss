@@ -1,26 +1,27 @@
 .form-checkbox {
+  position: relative;
   display: flex;
   align-items: center;
-  position: relative;
 }
 
 .form-checkbox__label {
-  padding-left: 19px;
-  margin-top: -2px;
+  display: flex;
+  align-items: center;
+  min-height: 38px;
+  padding-left: 61px;
   font-weight: 700;
   word-break: break-all;
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
-    padding-left: 40px;
-    margin-top: 10px;
+    min-height: 52px;
+    padding-left: 81px;
     font-size: 19px;
     line-height: 20px;
   }
 
-  @media (min-width: $desktop-width) {
-    margin-top: 16px;
-  }
+  // @media (min-width: $desktop-width) {
+  // }
 
   &::before {
     content: "";
@@ -68,9 +69,17 @@
 }
 
 .form-checkbox__input {
+  position: absolute;
+  top: 0;
+  left: 0;
   flex-shrink: 0;
-  width: 42px;
-  height: 42px;
+  width: 38px;
+  height: 38px;
   margin: 0;
   opacity: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 52px;
+    height: 52px;
+  }
 }
