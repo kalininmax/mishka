@@ -15,6 +15,7 @@
 }
 
 .catalog-video__wrapper {
+  position: relative;
   display: grid;
   border: 1px solid $special-grey;
   padding: 0 30px;
@@ -38,6 +39,36 @@
     column-gap: 80px;
     padding-left: 0;
     padding-bottom: 0;
+  }
+
+  &:hover {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 49%;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+      width: 100%;
+      box-shadow: 0 6px 10px rgba($basic-black, 0.1);
+
+      @media (min-width: $tablet-width) {
+        top: 455px;
+      }
+
+      @media (min-width: $desktop-width) {
+        top: 0;
+        left: auto;
+        width: calc(100% - 682px);
+      }
+    }
+  }
+
+  &:active {
+    &::after {
+      box-shadow: 0 3px 5px rgba($basic-black, 0.1);
+    }
   }
 }
 
