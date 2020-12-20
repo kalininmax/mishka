@@ -9,7 +9,8 @@
   width: 30px;
   height: 30px;
 
-  &:hover {
+  &:hover,
+  &:focus {
     svg {
       fill: #46c1ae;
     }

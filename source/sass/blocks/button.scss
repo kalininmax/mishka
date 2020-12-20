@@ -12,7 +12,8 @@
   cursor: pointer;
   box-sizing: border-box;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $basic-white;
     background-color: $basic-dark;
   }
