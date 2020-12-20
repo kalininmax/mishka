@@ -75,11 +75,13 @@
     outline: none;
     border-color: $special-aquamarine;
   }
-}
 
-.form-text__input:hover + .form-text__icon {
-  fill: $special-aquamarine;
-  opacity: 1;
+  &:hover + .form-text__icon,
+  &:focus + .form-text__icon,
+  &:active + .form-text__icon {
+    fill: $special-aquamarine;
+    opacity: 1;
+  }
 }
 
 .form-text--phone input {
