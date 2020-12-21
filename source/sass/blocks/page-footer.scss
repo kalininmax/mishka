@@ -22,13 +22,14 @@
   @media (min-width: $tablet-width) {
     display: block;
 
-    &:hover {
+    &[href]:hover,
+    &[href]:focus {
       svg {
         fill: #46c1ae;
       }
     }
 
-    &:active {
+    &[href]:active {
       svg {
         fill: rgba(#46c1ae, 0.3);
       }

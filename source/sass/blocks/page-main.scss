@@ -11,8 +11,9 @@
 }
 
 .page-main__title-wrapper {
-  padding: 5px 0;
   position: relative;
+  padding: 5px 0;
+  padding-bottom: 4px;
   background-color: $basic-grey;
 
   &::after {
@@ -82,5 +83,13 @@
 
 .page-main__video {
   margin: 0 auto;
-  margin-bottom: 60px;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 104px;
+  }
 }

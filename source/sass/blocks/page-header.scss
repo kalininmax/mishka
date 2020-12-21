@@ -18,7 +18,8 @@
   padding-bottom: 16px;
   margin: 0 auto;
 
-  &[href]:hover {
+  &[href]:hover,
+  &[href]:focus {
     opacity: 0.6;
   }
 
