@@ -10,7 +10,11 @@
     <header class="page__header page-header">
       <nav class="main-navigation main-navigation--closed page-header__nav">
         <a class="page-header__logo">
-          <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина «Мишка»">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
+            <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина «Мишка»">
+          </picture>
         </a>
         <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Меню</span></button>
         <ul class="main-navigation__list">
