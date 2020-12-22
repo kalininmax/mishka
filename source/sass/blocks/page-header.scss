@@ -34,7 +34,24 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 auto;
+    padding: 0 30px;
+    padding-top: 9px;
+    margin-left: 10px;
+  }
+}
+
+.page-header__logo img {
+  width: 86px;
+  height: 35px;
+
+  @media (min-width: $tablet-width) {
+    width: 114px;
+    height: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 149px;
+    height: 72px;
   }
 }
 
