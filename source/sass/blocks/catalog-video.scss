@@ -1,11 +1,14 @@
 .catalog-video {
-  max-width: 668px;
+  max-width: 380px;
   padding: 0 30px;
   padding-top: 22px;
   padding-bottom: 33px;
 
+  @media (min-width: 600px) {
+    max-width: 668px;
+  }
+
   @media (min-width: $tablet-width) {
-    max-width: 680px;
     padding: 0 50px;
   }
 
