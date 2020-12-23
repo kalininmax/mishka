@@ -149,9 +149,10 @@
   margin: 0 auto;
   margin-bottom: 26px;
   width: 100%;
-  max-width: 525px;
+  max-width: 360px;
 
   @media (min-width: $tablet-width) {
+    max-width: 525px;
     margin: 0;
     margin-top: 12px;
   }
@@ -159,6 +160,15 @@
   @media (min-width: $desktop-width) {
     grid-row: 1/4;
     margin-top: 16px;
+  }
+}
+
+.hit .hit__picture {
+  grid-row: 2/4;
+  grid-column: 2/3;
+
+  @media (min-width: $desktop-width) {
+    grid-row: 1/4;
   }
 }
 

@@ -10,7 +10,11 @@
     <header class="page__header page-header">
       <nav class="main-navigation main-navigation--closed page-header__nav">
         <a class="page-header__logo">
-          <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина «Мишка»">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
+            <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина «Мишка»">
+          </picture>
         </a>
         <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Меню</span></button>
         <ul class="main-navigation__list">
@@ -69,7 +73,11 @@
               </div>
             </dl>
           </div>
-          <img class="hit__image" src="img/triple-set-mobile.jpg" width="260" height="315" alt="Три вязаные корзинки разных разных размеров">
+          <picture class="hit__picture">
+            <source media="(min-width: 800px)" srcset="img/triple-set-desktop.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+            <source media="(min-width: 400px)" srcset="img/triple-set-tablet.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+            <img class="hit__image" src="img/triple-set-mobile.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" width="260" height="315" alt="Три вязаные корзинки разных разных размеров">
+          </picture>
           <div class="hit__order">
             <b class="hit__price">Цена: 990 руб.</b>
             <a class="hit__buy button" href="#">Заказать</a>
@@ -140,7 +148,12 @@
               <dd class="contacts__value">г. Санкт-Петербург<br> ул. Большая Конюшенная<br> д. 19/8, офис 101</dd>
             </dl>
           </div>
-        <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d595.0839688051276!2d30.32250406808989!3d59.938739415818915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x62740c0ffcd8a91f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsIDEwMSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MTE4Ng!5e0!3m2!1sru!2sru!4v1605223341882!5m2!1sru!2sru" width="527" height="457" style="border: 0;" aria-hidden="false" tabindex="0"></iframe>
+        <iframe class="contacts__map" title="Магазин на карте: г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d595.0839688051276!2d30.32250406808989!3d59.938739415818915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x62740c0ffcd8a91f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsIDEwMSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MTE4Ng!5e0!3m2!1sru!2sru!4v1605223341882!5m2!1sru!2sru" width="527" height="457" style="border: 0;" aria-hidden="false" tabindex="0" ></iframe>
+        <picture class="contacts__map-picture">
+          <source media="(min-width: 1150px)" srcset="img/map-desktop.png 1x, img/map-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/map-tablet.png 1x, img/map-tablet@2x.png 2x">
+          <img class="contacts__map-image" src="img/map-mobile.png" srcset="img/map-mobile@2x.png 2x" width="320" height="455" alt="Магазин на карте: г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101">
+        </picture>
         <a class="contacts__write-us button" href="#">Напишите нам</a>
         </div>
       </section>
