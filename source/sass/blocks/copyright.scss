@@ -2,41 +2,42 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 193px;
-  padding-top: 25px;
+  width: 181px;
+  padding-top: 28px;
 
   @media (min-width: $tablet-width) {
+    width: 193px;
     padding: 0;
   }
 }
 
 .copyright__text {
-  padding-left: 5px;
   font-size: 19px;
   line-height: 19px;
 
   @media (min-width: $tablet-width) {
+    // margin-top: -5px;
     padding-left: 10px;
   }
 }
 
 .copyright__link {
   display: block;
-  width: 39px;
+  width: 27px;
   height: 34px;
 
-  svg {
+  .copyright__icon {
     fill: $basic-aquamarine;
   }
 
   &:hover {
-    svg {
+    .copyright__icon {
       fill: #46c1ae;
     }
   }
 
   &:active {
-    svg {
+    .copyright__icon {
       fill: rgba(#46c1ae, 0.3);
     }
   }
