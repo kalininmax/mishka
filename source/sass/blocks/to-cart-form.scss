@@ -12,25 +12,42 @@
 
 .to-cart-form__list {
   display: flex;
-  justify-content: space-between;
-  width: 260px;
+  max-width: 350px;
+
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    max-width: 350px;
+  }
 }
 
 .to-cart-form__item {
-  position: relative;
+  flex-grow: 1;
+  max-width: 112px;
+  margin-right: 7px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .to-cart-form__label {
   display: block;
-  width: 78px;
   padding: 18px 0;
-  border: 2px solid $special-grey;
+  border: 2px solid rgba($basic-dark, 0.1);
   font-weight: 700;
   text-align: center;
   cursor: pointer;
+
+  &:hover {
+    border-color: rgba($basic-dark, 0.3);
+  }
+
+  &:active {
+    border-color: $special-aquamarine;
+  }
 }
 
 .to-cart-form__radio {
@@ -38,9 +55,19 @@
   width: 50px;
   height: 50px;
   margin: 0;
+
+  &:focus + .to-cart-form__label {
+    border-color: rgba($basic-dark, 0.3);
+  }
+
+  &:checked + .to-cart-form__label {
+    border-color: $special-aquamarine;
+  }
 }
 
 .to-cart-form__add-button {
   width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
   margin-top: 30px;
 }
