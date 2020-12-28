@@ -20,3 +20,15 @@ a {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.overlay {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $basic-white;
+  opacity: 0.9;
+  z-index: 100;
+}
