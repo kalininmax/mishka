@@ -14,14 +14,14 @@
     background-repeat: no-repeat;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: 500px) {
     &::after {
       height: 17px;
       background-image: url("../img/zigzag-line-tablet.svg");
     }
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: 900px) {
     &::after {
       height: 23px;
       background-image: url("../img/zigzag-line-desktop.svg");
