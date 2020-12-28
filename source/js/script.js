@@ -8,38 +8,41 @@ const modalToCart = document.querySelector('.to-cart');
 const overlay = document.querySelector('.overlay');
 const orderLink = document.querySelectorAll('.add-to-cart');
 
-function slider(slides, btnBack, btnNext) {
-  var i = 0;
-  slides[i].classList.add('slider__item--active');
+if(slides.length > 0) {
+  function slider(slides, btnBack, btnNext) {
+    var i = 0;
+    slides[i].classList.add('slider__item--active');
 
-  btnBack.addEventListener('click', function (evt) {
-    evt.preventDefault();
-    if (i > 0) {
-      btnNext.removeAttribute("disabled", "disabled");
-      slides[i].classList.remove('slider__item--active');
-      i--;
-      slides[i].classList.add('slider__item--active');
-    }
-    if (i == 0) {
-      btnBack.setAttribute("disabled", "disabled");
-    }
-  });
+    btnBack.addEventListener('click', function (evt) {
+      evt.preventDefault();
+      if (i > 0) {
+        btnNext.removeAttribute("disabled", "disabled");
+        slides[i].classList.remove('slider__item--active');
+        i--;
+        slides[i].classList.add('slider__item--active');
+      }
+      if (i == 0) {
+        btnBack.setAttribute("disabled", "disabled");
+      }
+    });
 
-  btnNext.addEventListener('click', function (evt) {
-    evt.preventDefault();
-    if (i < slides.length - 1) {
-      btnBack.removeAttribute("disabled", "disabled");
-      slides[i].classList.remove('slider__item--active');
-      i++;
-      slides[i].classList.add('slider__item--active');
-    }
-    if (i === slides.length - 1) {
-      btnNext.setAttribute("disabled", "disabled");
-    }
-  });
+    btnNext.addEventListener('click', function (evt) {
+      evt.preventDefault();
+      if (i < slides.length - 1) {
+        btnBack.removeAttribute("disabled", "disabled");
+        slides[i].classList.remove('slider__item--active');
+        i++;
+        slides[i].classList.add('slider__item--active');
+      }
+      if (i === slides.length - 1) {
+        btnNext.setAttribute("disabled", "disabled");
+      }
+    });
+  }
+  slider(slides, toggleBack, toggleNext);
 }
 
-slider(slides, toggleBack, toggleNext);
+
 
 function initMenu() {
   page.classList.remove('no-js')
@@ -57,34 +60,36 @@ function toggleMenu() {
 
 toggleMenu();
 
-function openModal(openButton) {
-  openButton.forEach(function(item) {
-    item.addEventListener('click', function (evt) {
-      evt.preventDefault();
-      overlay.style.display = "block";
-      page.style.overflow = "hidden"
-      modalToCart.classList.add('.page__modal--opened');
+if(overlay) {
+  function openModal(openButton) {
+    openButton.forEach(function(item) {
+      item.addEventListener('click', function (evt) {
+        evt.preventDefault();
+        overlay.style.display = "block";
+        page.style.overflow = "hidden"
+        modalToCart.classList.add('page__modal--opened');
+      });
     });
-  });
-}
+  }
 
-openModal(orderLink);
+  openModal(orderLink);
 
-function closeModal(modalToCart) {
-  window.addEventListener('keydown', function(evt) {
-    evt.preventDefault();
-    if (evt.key === 'Escape') {
+  function closeModal(modalToCart) {
+    window.addEventListener('keydown', function(evt) {
+      evt.preventDefault();
+      if (evt.key === 'Escape') {
+        overlay.style.display = "none";
+        page.style.overflow = "visible"
+        modalToCart.classList.remove('page__modal--opened');
+      }
+    });
+    overlay.addEventListener('click', function(evt) {
+      evt.preventDefault();
       overlay.style.display = "none";
       page.style.overflow = "visible"
-      modalToCart.classList.remove('.page__modal--opened');
-    }
-  });
-  overlay.addEventListener('click', function(evt) {
-    evt.preventDefault();
-    overlay.style.display = "none";
-    page.style.overflow = "visible"
-    modalToCart.classList.remove('.page__modal--opened');
-  });
-};
+      modalToCart.classList.remove('page__modal--opened');
+    });
+  };
 
-closeModal(modalToCart);
+  closeModal(modalToCart);
+}
