@@ -80,6 +80,7 @@
 }
 
 .reviews__list {
+  min-height: 192px;
   margin-bottom: 29px;
 
   @media (min-width: $tablet-width) {
