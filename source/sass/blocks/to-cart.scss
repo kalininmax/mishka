@@ -1,14 +1,19 @@
 .to-cart {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: block;
   padding: 30px;
+  background-color: $basic-white;
+
+  max-width: 506px;
+
+  @media (min-width: $tablet-width) {
+  }
 }
 
 .to-cart__title {
   padding: 0 55px;
   margin: 0;
   margin-bottom: 14px;
+  text-align: center;
   font-size: 25px;
   line-height: 30px;
   text-transform: uppercase;
