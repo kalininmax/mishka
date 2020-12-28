@@ -10,8 +10,12 @@
   list-style: none;
 }
 
-.slider__item:nth-child(2) {
+.slider__item {
   display: none;
+}
+
+.slider__item--active {
+  display: block;
 }
 
 .slider__toggles {
@@ -44,6 +48,14 @@
   &:active {
     .slider__toggle-icon {
       opacity: 0.3;
+    }
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+
+    .slider__toggle-icon {
+      opacity: 0.2;
     }
   }
 
