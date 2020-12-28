@@ -1,12 +1,8 @@
 .to-cart {
   display: block;
+  max-width: 506px;
   padding: 30px;
   background-color: $basic-white;
-
-  max-width: 506px;
-
-  @media (min-width: $tablet-width) {
-  }
 }
 
 .to-cart__title {

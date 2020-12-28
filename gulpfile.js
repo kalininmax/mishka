@@ -67,8 +67,8 @@ const images = () => {
       imagemin.svgo({
         plugins: [
           {cleanupNumericValues: {floatPrecision: 0}}
-       ]
-     }),
+        ]
+      }),
     ]))
     .pipe(gulp.dest("build/img"))
 }
