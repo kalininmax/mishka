@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html class="page no-js" lang="ru">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +8,7 @@
   </head>
   <body class="page__body">
     <header class="page__header page-header">
-      <nav class="main-navigation main-navigation--closed page-header__nav">
+      <nav class="main-navigation main-navigation--opened page-header__nav">
         <a class="page-header__logo" href="index.html">
           <picture>
             <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
@@ -60,7 +60,7 @@
               <p class="product-card__specs">Рост 30 см, вес 200 г</p>
               <p class="product-card__order">
                 <b class="product-card__price">1 200 руб.</b>
-                <a class="product-card__buy" href="#">
+                <a class="product-card__buy add-to-cart" href="#">
                   <span class="visually-hidden">В корзину</span>
                   <svg class="product-card__buy-icon" width="21" height="18">
                     <use xlink:href="img/sprite.svg#icon-cart"></use>
@@ -85,7 +85,7 @@
               <p class="product-card__specs">Диаметр 15 см, высота 10 см</p>
               <p class="product-card__order">
                 <b class="product-card__price">690 руб.</b>
-                <a class="product-card__buy" href="#">
+                <a class="product-card__buy add-to-cart" href="#">
                   <span class="visually-hidden">В корзину</span>
                   <svg class="product-card__buy-icon" width="21" height="18">
                     <use xlink:href="img/sprite.svg#icon-cart"></use>
@@ -110,7 +110,7 @@
               <p class="product-card__specs">Диаметр 30 см, высота 30 см</p>
               <p class="product-card__order">
                 <b class="product-card__price">1 500 руб.</b>
-                <a class="product-card__buy" href="#">
+                <a class="product-card__buy add-to-cart" href="#">
                   <span class="visually-hidden">В корзину</span>
                   <svg class="product-card__buy-icon" width="21" height="18">
                     <use xlink:href="img/sprite.svg#icon-cart"></use>
@@ -196,5 +196,6 @@
         <button class="to-cart-form__add-button button button--to-cart" type="submit">Добавить</button>
       </form>
     </section>
+    <script src="js/script.js"></script>
   </body>
 </html>
