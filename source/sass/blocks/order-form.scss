@@ -79,8 +79,8 @@
     margin-bottom: 20px;
 
     .order-form__fieldset {
+      max-width: 700px;
       padding-left: 167px;
-      max-width: 765px;
     }
   }
 
@@ -88,6 +88,7 @@
     padding: 50px 50px;
 
     .order-form__fieldset {
+      max-width: 765px;
       padding-left: 115px;
       padding-right: 50px;
     }
