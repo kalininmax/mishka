@@ -49,6 +49,7 @@ exports.html = html;
 
 const scripts = () => {
   return gulp.src("source/js/script.js")
+    .pipe(gulp.dest("build/js"))
     .pipe(uglify())
     .pipe(rename("script.min.js"))
     .pipe(gulp.dest("build/js"))
@@ -64,11 +65,7 @@ const images = () => {
     .pipe(imagemin([
       imagemin.mozjpeg({progressive: true}),
       imagemin.optipng({optimizationLevel: 3}),
-      imagemin.svgo({
-        plugins: [
-          {cleanupNumericValues: {floatPrecision: 0}}
-        ]
-      }),
+      imagemin.svgo(),
     ]))
     .pipe(gulp.dest("build/img"))
 }
@@ -79,7 +76,7 @@ exports.images = images;
 
 const createWebp = () => {
   return gulp.src("source/img/**/*.{jpg,png}")
-    .pipe(webp({quality: 90}))
+    .pipe(webp({quality: 85}))
     .pipe(gulp.dest("build/img"))
 }
 
@@ -88,7 +85,7 @@ exports.createWebp = createWebp;
 // Sprite
 
 const sprite = () => {
-  return gulp.src("source/img/icons/*.svg")
+  return gulp.src("build/img/icons/*.svg")
     .pipe(svgstore())
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img"));
@@ -99,8 +96,7 @@ exports.sprite = sprite;
 const copy = (done) => {
   gulp.src([
     "source/fonts/*.{woff2,woff}",
-    "source/*.ico",
-    "source/img/**/*.{jpg,png,svg}"
+    "source/*.ico"
   ], {
     base: "source"
   })
@@ -157,11 +153,11 @@ const build = gulp.series(
     styles,
     html,
     scripts,
-    sprite,
     copy,
     images,
     createWebp
-  )
+    ),
+  sprite
 );
 
 exports.build = build;
@@ -174,12 +170,12 @@ exports.default = gulp.series(
     styles,
     html,
     scripts,
-    sprite,
     copy,
     images,
     createWebp
-  ),
+    ),
   gulp.series(
+    sprite,
     server,
     watcher
   )
