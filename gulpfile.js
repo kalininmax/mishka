@@ -165,17 +165,8 @@ exports.build = build;
 // Default
 
 exports.default = gulp.series(
-  clean,
-  gulp.parallel(
-    styles,
-    html,
-    scripts,
-    copy,
-    images,
-    createWebp
-    ),
+  build,
   gulp.series(
-    sprite,
     server,
     watcher
   )
