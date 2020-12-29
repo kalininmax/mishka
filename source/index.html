@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html class="page no-js" lang="ru">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Мишка</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="Мишка — магазин товаров для дома ручной работы">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
     <header class="page__header page-header">
-      <nav class="main-navigation main-navigation--closed page-header__nav">
+      <nav class="main-navigation main-navigation--opened page-header__nav">
         <a class="page-header__logo">
           <picture>
             <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
@@ -46,10 +47,14 @@
         <div class="categories__wrapper">
           <ul class="categories__list">
             <li class="categories__item"><a href="#" class="categories__link categories__link--interior">
-              <svg class="categories__item-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="62"><g fill="#149080"><path d="M15.16 37.72c-.3 1-.2 2.19 0 3.58.5 2.59 1.7 5.97 2.4 9.65h5.08c.7-3.58 1.9-6.96 2.5-9.65.3-1.4.3-2.69 0-3.58-.3-.9-.9-1.6-2-2.3h-5.98c-1.2.7-1.8 1.4-2 2.3zM26.93 57.62H13.17c-1.3 0-2.3 1-2.3 2.19V62h18.36v-2.19c0-1.2-1-2.19-2.3-2.19zM34.02 2.19H22.34c0-1.2-1-2.19-2.29-2.19-1.3 0-2.3 1-2.3 2.19H6.09L0 27.57c.8-.5 1.6-1 2.6-1 1.39 0 2.19.8 2.89 1.4.7.6 1.2.8 1.4.8.3 0 .8-.3 1.49-.8.7-.5 1.6-1.4 2.9-1.4 1.29 0 2.19.8 2.88 1.4.7.5 1.2.8 1.5.8.1 0 .3-.1.6-.2.2-.1.5-.4.9-.6.5-.4 1.1-1 2-1.2.3-.1.6-.1.89-.1 1.3 0 2.2.8 2.9 1.4.7.5 1.19.8 1.49.8.3 0 .8-.3 1.4-.8.7-.6 1.6-1.4 2.89-1.4 1.4 0 2.2.8 2.9 1.4.29.3.59.5.89.6.2.1.4.2.6.2.3 0 .8-.3 1.4-.9.7-.6 1.59-1.4 2.89-1.4 1 0 1.8.5 2.59 1L34.02 2.19zM23.44 53.14h-6.88c-.7 0-1.1.5-1.1 1.1 0 .6.5 1.1 1.1 1.1h6.88c.7 0 1.1-.5 1.1-1.1.1-.6-.4-1.1-1.1-1.1z"/><path d="M20.05 28.76c-.1 0-.3.1-.6.2-.2.1-.4.3-.6.4v3.68h2.3v-3.58c-.5-.4-.9-.7-1.1-.7z"/></g></svg>
+              <svg class="categories__item-icon" width="40" height="62">
+                <use xlink:href="img/sprite.svg#icon-interior"></use>
+              </svg>
               Предметы<br> интерьера</a></li>
             <li class="categories__item categories__item"><a href="#" class="categories__link categories__link--toys">
-              <svg class="categories__item-icon" xmlns="http://www.w3.org/2000/svg" width="60" height="60"><path fill="#149080" d="M0 44l27.4 16V36.54L0 20.44v23.55zm51.3-31.52V15c0 1.81-3.5 3.32-7.7 3.32-4.3 0-7.7-1.5-7.7-3.32v-4.13c.3 1.71 3.6 3.12 7.7 3.12 4.3 0 7.7-1.5 7.7-3.32 0-1.81-3.5-3.32-7.7-3.32h-1l-5-2.92v3.12c0 1.81-3.5 3.32-7.7 3.32-2.7 0-5-.6-6.4-1.5-.2-.2-.4-.41-.7-.61-.4-.4-.6-.8-.6-1.21V4.53l-4.8 2.82h-1.1c-4.3 0-7.7 1.5-7.7 3.32 0 1.81 3.5 3.32 7.7 3.32 4.1 0 7.4-1.4 7.7-3.12V15c0 1.81-3.5 3.32-7.7 3.32-4.3 0-7.7-1.5-7.7-3.32v-2.42l-6 3.53 27.5 16.1 27.4-16-6.2-3.73zM37.7 22.75c0 1.81-3.5 3.32-7.7 3.32-4.3 0-7.7-1.5-7.7-3.32v-4.13c.3 1.72 3.6 3.13 7.7 3.13s7.4-1.41 7.7-3.13v4.13zm-5.1 14V60L60 44V20.73l-27.4 16zm-2.7-30.1c4.3 0 7.7-1.52 7.7-3.33S34.1 0 29.9 0c-4.3 0-7.7 1.51-7.7 3.32 0 1.81 3.4 3.32 7.7 3.32z"/></svg>
+              <svg class="categories__item-icon" width="60" height="60">
+                <use xlink:href="img/sprite.svg#icon-toy"></use>
+              </svg>
               Детские<br> игрушки</a></li>
           </ul>
         </div>
@@ -87,7 +92,7 @@
           </picture>
           <div class="hit__order">
             <b class="hit__price">Цена: 990 руб.</b>
-            <a class="hit__buy button" href="#">Заказать</a>
+            <a class="hit__buy button add-to-cart" href="#">Заказать</a>
           </div>
         </div>
       </section>
@@ -108,7 +113,7 @@
         <div class="reviews__wrapper slider">
           <h2 class="reviews__title">Отзывы</h2>
           <ul class="reviews__list slider__list">
-            <li class="reviews__item slider__item">
+            <li class="reviews__item slider__item slider__item--active">
               <blockquote class="reviews__quote">
                 <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как
                   у&nbsp;популярных инстамамочек.
@@ -122,23 +127,37 @@
             </li>
             <li class="reviews__item slider__item">
               <blockquote class="reviews__quote">
-                <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как
-                  у популярных инстамамочек.
-                  В отчаянии, я накупила аксессуаров и игрушек в Мишке,
-                  и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+                <p class="reviews__text">Я сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров
+                  и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают
+                  больше лайков!</p>
                 <cite class="reviews__author">
                   <b class="reviews__author-name">Екатерина Красильникова</b><br>
                   @misssssiskras2
                 </cite>
               </blockquote>
             </li>
+            <li class="reviews__item slider__item">
+              <blockquote class="reviews__quote">
+                <p class="reviews__text">Я двоюродная сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров
+                  и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают
+                  больше лайков!</p>
+                <cite class="reviews__author">
+                  <b class="reviews__author-name">Елена Красильникова</b><br>
+                  @misssssiskras3
+                </cite>
+              </blockquote>
+            </li>
           </ul>
           <p class="reviews__toggles slider__toggles">
-            <button class="slider__toggle slider__toggle--back" type="button">
-              <svg class="slider__toggle-icon" xmlns="http://www.w3.org/2000/svg" width="50" height="26"><path d="M50 11H7.7l8.1-8.2L13 0 0 13l13 13 2.8-2.8L7.7 15H50v-4z"/></svg>
+            <button class="slider__toggle slider__toggle--back" type="button" disabled>
+              <svg class="slider__toggle-icon" width="50" height="26">
+                <use xlink:href="img/sprite.svg#icon-arrow-left"></use>
+              </svg>
               <span class="visually-hidden">Предыдущий отзыв</span></button>
             <button class="slider__toggle slider__toggle--next" type="button">
-              <svg class="slider__toggle-icon" xmlns="http://www.w3.org/2000/svg" width="50" height="26"><path d="M0 11h42.3l-8.1-8.2L37 0l13 13-13 13-2.8-2.8 8.1-8.2H0v-4z"/></svg>
+              <svg class="slider__toggle-icon" width="50" height="26">
+                <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+              </svg>
               <span class="visually-hidden">Следующий отзыв</span></button>
           </p>
           <a class="reviews__write button" href="#">Написать</a>
@@ -157,6 +176,9 @@
           </div>
         <iframe class="contacts__map" title="Магазин на карте: г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d595.0839688051276!2d30.32250406808989!3d59.938739415818915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x62740c0ffcd8a91f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsIDEwMSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MTE4Ng!5e0!3m2!1sru!2sru!4v1605223341882!5m2!1sru!2sru" width="527" height="457" style="border: 0;" aria-hidden="false" tabindex="0" ></iframe>
         <picture class="contacts__map-picture">
+          <source type="image/webp" media="(min-width: 1150px)" srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x">
           <source media="(min-width: 1150px)" srcset="img/map-desktop.png 1x, img/map-desktop@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/map-tablet.png 1x, img/map-tablet@2x.png 2x">
           <img class="contacts__map-image" src="img/map-mobile.png" srcset="img/map-mobile@2x.png 2x" width="320" height="455" alt="Магазин на карте: г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101">
@@ -169,7 +191,7 @@
       <div class="page-footer__wrapper">
         <a class="page-footer__logo">
           <svg role="img" aria-label="Логотип магазина «Мишка»" width="102" height="34">
-            <use xlink:href="img/sprite.svg#logo-mishka"></use>
+            <use xlink:href="img/sprite.svg#logo-footer"></use>
           </svg>
         </a>
         <ul class="page-footer__socials socials">
@@ -180,7 +202,7 @@
             <span class="visually-hidden">Инстаграм</span></a></li>
           <li class="socials__item"><a class="socials__link socials__link--facebook" href="https://www.facebook.com/htmlacademy">
             <svg class="social__item-icons" width="15" height="28">
-              <use xlink:href="img/sprite.svg#icon-facebook"></use>
+              <use xlink:href="img/sprite.svg#icon-fb"></use>
               </svg>
             <span class="visually-hidden">Фейсбук</span></a></li>
           <li class="socials__item"><a class="socials__link socials__link--twitter" href="https://twitter.com/htmlacademy_ru">
@@ -192,12 +214,15 @@
         <p class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 60 60"><path d="M30.2 5H30L10.3 7.1v36.2L30 55l19.7-11.7V7.1L30.2 5zm17 36.8L30 52 12.8 41.8V27l17.1 10.2V39l-11.7-7v1.8L30 40.9v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8L29.9 12.8 12.8 23V9.4L30 7.6l17.2 1.8V23z"/></svg>
+            <svg class="copyright__icon" width="27" height="34">
+              <use xlink:href="img/sprite.svg#icon-academy"></use>
+            </svg>
             <span class="visually-hidden">HTML Academy</span></a>
         </p>
       </div>
     </footer>
-    <section class="page__modal page__modal--closed to-cart">
+    <div class="overlay"></div>
+    <section class="page__modal to-cart">
       <h2 class="to-cart__title">Добавить в корзину</h2>
       <form class="to-cart__form to-cart-form" action="https://echo.htmlacademy.ru">
         <p class="to-cart-form__text">Выберите размер:</p>
@@ -218,5 +243,6 @@
         <button class="to-cart-form__add-button button button--to-cart" type="submit">Добавить</button>
       </form>
     </section>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

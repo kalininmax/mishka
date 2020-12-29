@@ -18,9 +18,17 @@
 }
 
 .page__modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  right: 0;
   margin: 0 auto;
+  transform: translateY(-50%);
+  z-index: 110;
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
 }
 
-.page__modal--closed {
-  display: none;
+.page__modal--opened {
+  display: block;
 }
