@@ -50,12 +50,13 @@
   border-bottom: 2px solid $basic-black;
   font-family: inherit;
   font-size: 17px;
-  line-height: 26px;
+  line-height: 27px;
   background-color: transparent;
   z-index: 1;
 
   @media (max-width: $mobile-width-only) {
     padding-left: 0;
+    padding-bottom: 11px;
   }
 
   @media (min-width: $tablet-width) {
