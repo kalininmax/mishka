@@ -9,9 +9,10 @@
 
 .form-message__label {
   display: block;
-  margin-bottom: 18px;
+  margin-bottom: 14px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 18px;
     position: absolute;
     top: 21px;
     left: 0;

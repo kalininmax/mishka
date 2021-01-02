@@ -30,6 +30,12 @@
   }
 }
 
+.no-js .main-navigation__toggle {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
 .main-navigation__toggle::before {
   content: "";
   position: absolute;
