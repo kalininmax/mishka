@@ -1,13 +1,11 @@
 .copyright {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   width: 181px;
   padding-top: 28px;
 
   @media (min-width: $tablet-width) {
     width: 193px;
     padding: 0;
+    padding-top: 7px;
   }
 }
 
@@ -16,17 +14,18 @@
   line-height: 19px;
 
   @media (min-width: $tablet-width) {
-    // margin-top: -5px;
     padding-left: 10px;
   }
 }
 
 .copyright__link {
-  display: block;
-  width: 27px;
-  height: 34px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   .copyright__icon {
+    width: 27px;
+    height: 34px;
     fill: $basic-aquamarine;
   }
 
