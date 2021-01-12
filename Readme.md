@@ -1,4 +1,4 @@
-# Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+# Личный проект «Мишка» ![Project test & build](https://github.com/kalininmax/mishka/workflows/Project%20test%20&%20build/badge.svg?branch=master)
 
 * Студент: [Максим Калинин](https://up.htmlacademy.ru/adaptive/21/user/120631).
 * Наставник: [Артур Трифонов](https://htmlacademy.ru/profile/wrgraff).
